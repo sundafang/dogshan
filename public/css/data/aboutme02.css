@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.head {
+  width: 90%;
+  padding: 5%;
+  border-bottom: 1px solid #;
+}
+.head_img {
+  height: 20px;
+  float: left;
+  margin-top: 5px;
+}
+.head_p {
+  color: #323232;
+  font-size: 24px;
+  font-weight: bold;
+  float: left;
+  margin-left: 27%;
+}
