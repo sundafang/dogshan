@@ -1,28 +1,30 @@
-* {
+body {
   margin: 0;
   padding: 0;
+  background: #ccc;
 }
 .head {
-  width: 90%;
-  padding: 5%;
+  width: 100%;
   border-bottom: 1px solid #e1e1e1;
+  background: #fff;
 }
 .head_img {
   height: 20px;
   float: left;
   margin-top: 5px;
+  margin-top: 26px;
 }
 .head_p {
   color: #323232;
   font-size: 24px;
   font-weight: bold;
   float: left;
-  margin-left: 27%;
+  margin-left: 32%;
 }
 .banner {
   width: 100%;
   margin-top: 5px;
-  margin-bottom: 20px;
+  background: #fff;
 }
 .head_01 {
   width: 100%;
@@ -31,7 +33,7 @@
 }
 .banner_01 {
   border-bottom: 1px solid #e1e1e1;
-  margin-bottom: 5px;
+  height: 35px;
 }
 .banner_span {
   color: #878787;
@@ -73,10 +75,11 @@
 }
 .papers {
   width: 100%;
-  margin-top: 30px;
+  background: #fff;
 }
 .papers_left {
   float: left;
+  margin-top: 30px;
   width: 80px;
   height: 60px;
   background: #878787;
@@ -86,12 +89,14 @@
 .papers_center {
   float: left;
   width: 80px;
+  margin-top: 30px;
   height: 60px;
   background: #878787;
   border-radius: 5px;
 }
 .papers_right {
   width: 80px;
+  margin-top: 30px;
   float: left;
   height: 60px;
   background: #878787;
@@ -106,4 +111,44 @@
   font-size: 12px;
   color: #646464;
   text-align: center;
+}
+.footer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.poto {
+  width: 100%;
+  height: 40px;
+  border-top: 1px solid #ccc;
+  background: #fff;
+  text-align: center;
+  line-height: 40px;
+}
+.pt {
+  width: 100%;
+  height: 40px;
+  border-top: 1px solid #ccc;
+  background: #fff;
+  text-align: center;
+  line-height: 40px;
+}
+.bt {
+  width: 100%;
+  height: 40px;
+  border-top: 1px solid #ccc;
+  background: #fff;
+  text-align: center;
+  line-height: 40px;
+  color: #ea5404;
+}
+.pc {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }

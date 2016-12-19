@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #646464;
+}
+li {
+  list-style: none;
+}
+.box {
+  width: 100%;
+  padding: 0 5%;
+}
+.box .box_left {
+  width: 50%;
+  float: left;
+}
+.box .box_left .box_left_li {
+  height: 50px;
+  line-height: 50px;
+}
+.box .box_right {
+  width: 50%;
+  float: right;
+}
+.box .box_right .box_right_li {
+  height: 49px;
+  border-bottom: 1px solid #e1e1e1;
+  line-height: 40px;
+}
