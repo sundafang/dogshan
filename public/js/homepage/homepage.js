@@ -64,7 +64,7 @@ var settime = setInterval(sum,2000);
 		}
 	})*/
 
-
+	
 
 $(".navbar_02").on('touchstart',function(){
 	$(".navbar_01").find(".navbar_p").css("color","#646464")
@@ -75,8 +75,7 @@ $(".navbar_02").on('touchstart',function(){
 	$(this).html("<img src='../../public/img/homepage/content_icon01_down@2x.png'/>")
 })
 $(".navbar_01").on('touchstart',function(){
-	var count = $(this).index();
-	//console.log(count);
+	
 	$(".navbar_01").find(".navbar_p").css("color","#646464")
 	$(".navbar_01").find(".navbar_img").html("<img src='../../public/img/homepage/content_icon02_nor@2x.png'/>")
 	$(".navbar_02").html("<img src='../../public/img/homepage/content_icon01_nor@2x.png'/>")
@@ -94,10 +93,65 @@ $(".navbar_01").on('touchstart',function(){
 	$(".navbar").css("margin-top","-215px");
  	$(window).scrollTop(187);
  	
- 	//区域
- 	$('.navbar_01').eq(count).find('.xuanze').css("display","block")
- 	//面积 
-	
+ 	
+ 	
+	//区域
+	var count = $(this).index();
+	//console.log(count);
+	switch(count){
+		case 0:
+		console.log(count);
+		$('.cost').css("display","none")
+		$('.area').css("display","none")
+		$('.xuanze').css("display","block")
+		$('.unit').find("ul").eq(1).css('display','none')
+		$('.unit').find("ul").eq(0).css('display','none')
+		$('.area_left').find("ul").eq(1).css("display","none")
+		$('.area_right').find("ul").eq(1).css("display","none")
+		$('.area_left').find("ul").eq(0).css("display","block")
+		$('.area_right').find("ul").eq(0).css("display","block")
+		
+		break;
+		case 1:
+		console.log(count);
+		$('.xuanze').css("display","none")
+		$('.cost').css("display","none")
+		$('.area').css("display","block")
+		$('.area_left').find("ul").eq(1).css("display","none")
+		$('.area_right').find("ul").eq(1).css("display","none")
+		$('.area_left').find("ul").eq(0).css("display","none")
+		$('.area_right').find("ul").eq(0).css("display","none")
+		$('.unit').find("ul").eq(1).css('display','none')
+		$('.unit').find("ul").eq(0).css('display','block')
+		
+		break;
+		case 2:
+		console.log(count);
+		$('.area').css("display","none")
+		$('.xuanze').css("display","none")
+		$('.cost').css("display","block")
+		$('.area_left').find("ul").eq(0).css("display","none")
+		$('.area_right').find("ul").eq(0).css("display","none")
+		$('.area_left').find("ul").eq(1).css("display","none")
+		$('.area_right').find("ul").eq(1).css("display","none")
+		$('.unit').find("ul").eq(0).css('display','none')
+		$('.unit').find("ul").eq(1).css('display','block')
+		break;
+		case 3:
+		$('.area').css("display","none")
+		$('.xuanze').css("display","none")
+		$('.cost').css("display","none")
+		$('.box').css('display','block')
+		$('.unit').find("ul").eq(0).css('display','none')
+		$('.unit').find("ul").eq(1).css('display','none')
+		$('.area_left').find("ul").eq(0).css("display","none")
+		$('.area_right').find("ul").eq(0).css("display","none")
+		$('.area_left').find("ul").eq(1).css("display","block")
+		$('.area_right').find("ul").eq(1).css("display","block")
+		
+		
+	}
+ 
 	
 	
 	
