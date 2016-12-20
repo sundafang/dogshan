@@ -8,7 +8,7 @@ app.use('/',express.static(viewsPath));
 
 var pulicPath = path.join(__dirname,'public');
 app.use('/public',express.static(pulicPath));
-app.listen(9000,function () {
-    console.log('server run at port 9000')
+app.listen(160914,function () {
+    console.log('server run at port 160914')
 })
 module.exports=app;

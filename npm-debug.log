@@ -1,0 +1,2428 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'express',
+1 verbose cli   '--save' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData express@^4.14.0
+8 silly fetchNamedPackageData express
+9 silly mapToRegistry name express
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npm.taobao.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'express',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'express',
+12 silly mapToRegistry   name: 'express',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npm.taobao.org/express
+14 verbose request uri https://registry.npm.taobao.org/express
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 11:55:11
+17 verbose request id 40606b82d2abe6fc
+18 verbose etag "8d85c-AhOufRFSoibJQNi+I3ULbA"
+19 http request GET https://registry.npm.taobao.org/express
+20 http 200 https://registry.npm.taobao.org/express
+21 verbose headers { date: 'Tue, 20 Dec 2016 03:55:14 GMT',
+21 verbose headers   'content-type': 'application/json; charset=utf-8',
+21 verbose headers   'content-length': '579810',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-current-requests': '1',
+21 verbose headers   etag: '"8d8e2-KBeRZ4iQIMWrR5c2xd15qw"',
+21 verbose headers   'x-readtime': '239' }
+22 silly get cb [ 200,
+22 silly get   { date: 'Tue, 20 Dec 2016 03:55:14 GMT',
+22 silly get     'content-type': 'application/json; charset=utf-8',
+22 silly get     'content-length': '579810',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-current-requests': '1',
+22 silly get     etag: '"8d8e2-KBeRZ4iQIMWrR5c2xd15qw"',
+22 silly get     'x-readtime': '239' } ]
+23 verbose get saving express to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npm.taobao.org\express\.cache.json
+24 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+25 silly install normalizeTree
+26 silly loadCurrentTree Finishing
+27 silly loadIdealTree Starting
+28 silly install loadIdealTree
+29 silly cloneCurrentTree Starting
+30 silly install cloneCurrentTreeToIdealTree
+31 silly cloneCurrentTree Finishing
+32 silly loadShrinkwrap Starting
+33 silly install loadShrinkwrap
+34 silly loadShrinkwrap Finishing
+35 silly loadAllDepsIntoIdealTree Starting
+36 silly install loadAllDepsIntoIdealTree
+37 silly resolveWithNewModule express@4.14.0 checking installable status
+38 silly cache add args [ 'express@^4.14.0', null ]
+39 verbose cache add spec express@^4.14.0
+40 silly cache add parsed spec Result {
+40 silly cache add   raw: 'express@^4.14.0',
+40 silly cache add   scope: null,
+40 silly cache add   escapedName: 'express',
+40 silly cache add   name: 'express',
+40 silly cache add   rawSpec: '^4.14.0',
+40 silly cache add   spec: '>=4.14.0 <5.0.0',
+40 silly cache add   type: 'range' }
+41 silly addNamed express@>=4.14.0 <5.0.0
+42 verbose addNamed ">=4.14.0 <5.0.0" is a valid semver range for express
+43 silly addNameRange { name: 'express', range: '>=4.14.0 <5.0.0', hasData: false }
+44 silly mapToRegistry name express
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npm.taobao.org/
+47 silly mapToRegistry data Result {
+47 silly mapToRegistry   raw: 'express',
+47 silly mapToRegistry   scope: null,
+47 silly mapToRegistry   escapedName: 'express',
+47 silly mapToRegistry   name: 'express',
+47 silly mapToRegistry   rawSpec: '',
+47 silly mapToRegistry   spec: 'latest',
+47 silly mapToRegistry   type: 'tag' }
+48 silly mapToRegistry uri https://registry.npm.taobao.org/express
+49 verbose addNameRange registry:https://registry.npm.taobao.org/express not in flight; fetching
+50 verbose get https://registry.npm.taobao.org/express not expired, no request
+51 silly addNameRange number 2 { name: 'express', range: '>=4.14.0 <5.0.0', hasData: true }
+52 silly addNameRange versions [ 'express',
+52 silly addNameRange   [ '4.14.0',
+52 silly addNameRange     '4.13.4',
+52 silly addNameRange     '4.13.3',
+52 silly addNameRange     '4.13.2',
+52 silly addNameRange     '3.21.2',
+52 silly addNameRange     '5.0.0-alpha.2',
+52 silly addNameRange     '4.13.1',
+52 silly addNameRange     '3.21.1',
+52 silly addNameRange     '4.13.0',
+52 silly addNameRange     '3.21.0',
+52 silly addNameRange     '4.12.4',
+52 silly addNameRange     '3.20.3',
+52 silly addNameRange     '4.12.3',
+52 silly addNameRange     '3.20.2',
+52 silly addNameRange     '4.12.2',
+52 silly addNameRange     '4.12.1',
+52 silly addNameRange     '3.20.1',
+52 silly addNameRange     '4.12.0',
+52 silly addNameRange     '3.20.0',
+52 silly addNameRange     '4.11.2',
+52 silly addNameRange     '3.19.2',
+52 silly addNameRange     '4.11.1',
+52 silly addNameRange     '3.19.1',
+52 silly addNameRange     '4.11.0',
+52 silly addNameRange     '4.10.8',
+52 silly addNameRange     '3.19.0',
+52 silly addNameRange     '4.10.7',
+52 silly addNameRange     '4.10.6',
+52 silly addNameRange     '3.18.6',
+52 silly addNameRange     '3.18.5',
+52 silly addNameRange     '4.10.5',
+52 silly addNameRange     '4.10.4',
+52 silly addNameRange     '4.10.3',
+52 silly addNameRange     '3.18.4',
+52 silly addNameRange     '4.10.2',
+52 silly addNameRange     '3.18.3',
+52 silly addNameRange     '5.0.0-alpha.1',
+52 silly addNameRange     '4.10.1',
+52 silly addNameRange     '3.18.2',
+52 silly addNameRange     '4.10.0',
+52 silly addNameRange     '3.18.1',
+52 silly addNameRange     '3.18.0',
+52 silly addNameRange     '4.9.8',
+52 silly addNameRange     '3.17.8',
+52 silly addNameRange     '4.9.7',
+52 silly addNameRange     '4.9.6',
+52 silly addNameRange     '3.17.7',
+52 silly addNameRange     '3.17.6',
+52 silly addNameRange     '4.9.5',
+52 silly addNameRange     '3.17.5',
+52 silly addNameRange     '4.9.4',
+52 silly addNameRange     '3.17.4',
+52 silly addNameRange     '4.9.3',
+52 silly addNameRange     '3.17.3',
+52 silly addNameRange     '4.9.2',
+52 silly addNameRange     '4.9.1',
+52 silly addNameRange     '3.17.2',
+52 silly addNameRange     '4.9.0',
+52 silly addNameRange     '3.17.1',
+52 silly addNameRange     '3.17.0',
+52 silly addNameRange     '4.8.8',
+52 silly addNameRange     '3.16.10',
+52 silly addNameRange     '4.8.7',
+52 silly addNameRange     '3.16.9',
+52 silly addNameRange     '4.8.6',
+52 silly addNameRange     '3.16.8',
+52 silly addNameRange     '4.8.5',
+52 silly addNameRange     '3.16.7',
+52 silly addNameRange     '4.8.4',
+52 silly addNameRange     '3.16.6',
+52 silly addNameRange     '3.16.5',
+52 silly addNameRange     '4.8.3',
+52 silly addNameRange     '3.16.4',
+52 silly addNameRange     '3.16.3',
+52 silly addNameRange     '4.8.2',
+52 silly addNameRange     '3.16.2',
+52 silly addNameRange     '4.8.1',
+52 silly addNameRange     '3.16.1',
+52 silly addNameRange     '4.8.0',
+52 silly addNameRange     '3.16.0',
+52 silly addNameRange     '4.7.4',
+52 silly addNameRange     '3.15.3',
+52 silly addNameRange     '4.7.3',
+52 silly addNameRange     '4.7.2',
+52 silly addNameRange     '3.15.2',
+52 silly addNameRange     '4.7.1',
+52 silly addNameRange     '3.15.1',
+52 silly addNameRange     '4.7.0',
+52 silly addNameRange     '3.15.0',
+52 silly addNameRange     '4.6.1',
+52 silly addNameRange     '4.6.0',
+52 silly addNameRange     '3.14.0',
+52 silly addNameRange     '4.5.1',
+52 silly addNameRange     '4.5.0',
+52 silly addNameRange     '3.13.0',
+52 silly addNameRange     '4.4.5',
+52 silly addNameRange     '3.12.1',
+52 silly addNameRange     '3.12.0',
+52 silly addNameRange     '4.4.4',
+52 silly addNameRange     '3.11.0',
+52 silly addNameRange     ... 144 more items ] ]
+53 silly addNamed express@4.14.0
+54 verbose addNamed "4.14.0" is a plain semver version for express
+55 silly cache afterAdd express@4.14.0
+56 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\express\4.14.0\package\package.json not in flight; writing
+57 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+58 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\express\4.14.0\package\package.json written
+59 silly fetchNamedPackageData array-flatten
+60 silly mapToRegistry name array-flatten
+61 silly mapToRegistry using default registry
+62 silly mapToRegistry registry https://registry.npm.taobao.org/
+63 silly mapToRegistry data Result {
+63 silly mapToRegistry   raw: 'array-flatten',
+63 silly mapToRegistry   scope: null,
+63 silly mapToRegistry   escapedName: 'array-flatten',
+63 silly mapToRegistry   name: 'array-flatten',
+63 silly mapToRegistry   rawSpec: '',
+63 silly mapToRegistry   spec: 'latest',
+63 silly mapToRegistry   type: 'tag' }
+64 silly mapToRegistry uri https://registry.npm.taobao.org/array-flatten
+65 silly fetchNamedPackageData content-disposition
+66 silly mapToRegistry name content-disposition
+67 silly mapToRegistry using default registry
+68 silly mapToRegistry registry https://registry.npm.taobao.org/
+69 silly mapToRegistry data Result {
+69 silly mapToRegistry   raw: 'content-disposition',
+69 silly mapToRegistry   scope: null,
+69 silly mapToRegistry   escapedName: 'content-disposition',
+69 silly mapToRegistry   name: 'content-disposition',
+69 silly mapToRegistry   rawSpec: '',
+69 silly mapToRegistry   spec: 'latest',
+69 silly mapToRegistry   type: 'tag' }
+70 silly mapToRegistry uri https://registry.npm.taobao.org/content-disposition
+71 silly fetchNamedPackageData content-type
+72 silly mapToRegistry name content-type
+73 silly mapToRegistry using default registry
+74 silly mapToRegistry registry https://registry.npm.taobao.org/
+75 silly mapToRegistry data Result {
+75 silly mapToRegistry   raw: 'content-type',
+75 silly mapToRegistry   scope: null,
+75 silly mapToRegistry   escapedName: 'content-type',
+75 silly mapToRegistry   name: 'content-type',
+75 silly mapToRegistry   rawSpec: '',
+75 silly mapToRegistry   spec: 'latest',
+75 silly mapToRegistry   type: 'tag' }
+76 silly mapToRegistry uri https://registry.npm.taobao.org/content-type
+77 silly fetchNamedPackageData cookie-signature
+78 silly mapToRegistry name cookie-signature
+79 silly mapToRegistry using default registry
+80 silly mapToRegistry registry https://registry.npm.taobao.org/
+81 silly mapToRegistry data Result {
+81 silly mapToRegistry   raw: 'cookie-signature',
+81 silly mapToRegistry   scope: null,
+81 silly mapToRegistry   escapedName: 'cookie-signature',
+81 silly mapToRegistry   name: 'cookie-signature',
+81 silly mapToRegistry   rawSpec: '',
+81 silly mapToRegistry   spec: 'latest',
+81 silly mapToRegistry   type: 'tag' }
+82 silly mapToRegistry uri https://registry.npm.taobao.org/cookie-signature
+83 silly fetchNamedPackageData merge-descriptors
+84 silly mapToRegistry name merge-descriptors
+85 silly mapToRegistry using default registry
+86 silly mapToRegistry registry https://registry.npm.taobao.org/
+87 silly mapToRegistry data Result {
+87 silly mapToRegistry   raw: 'merge-descriptors',
+87 silly mapToRegistry   scope: null,
+87 silly mapToRegistry   escapedName: 'merge-descriptors',
+87 silly mapToRegistry   name: 'merge-descriptors',
+87 silly mapToRegistry   rawSpec: '',
+87 silly mapToRegistry   spec: 'latest',
+87 silly mapToRegistry   type: 'tag' }
+88 silly mapToRegistry uri https://registry.npm.taobao.org/merge-descriptors
+89 silly fetchNamedPackageData methods
+90 silly mapToRegistry name methods
+91 silly mapToRegistry using default registry
+92 silly mapToRegistry registry https://registry.npm.taobao.org/
+93 silly mapToRegistry data Result {
+93 silly mapToRegistry   raw: 'methods',
+93 silly mapToRegistry   scope: null,
+93 silly mapToRegistry   escapedName: 'methods',
+93 silly mapToRegistry   name: 'methods',
+93 silly mapToRegistry   rawSpec: '',
+93 silly mapToRegistry   spec: 'latest',
+93 silly mapToRegistry   type: 'tag' }
+94 silly mapToRegistry uri https://registry.npm.taobao.org/methods
+95 silly fetchNamedPackageData path-to-regexp
+96 silly mapToRegistry name path-to-regexp
+97 silly mapToRegistry using default registry
+98 silly mapToRegistry registry https://registry.npm.taobao.org/
+99 silly mapToRegistry data Result {
+99 silly mapToRegistry   raw: 'path-to-regexp',
+99 silly mapToRegistry   scope: null,
+99 silly mapToRegistry   escapedName: 'path-to-regexp',
+99 silly mapToRegistry   name: 'path-to-regexp',
+99 silly mapToRegistry   rawSpec: '',
+99 silly mapToRegistry   spec: 'latest',
+99 silly mapToRegistry   type: 'tag' }
+100 silly mapToRegistry uri https://registry.npm.taobao.org/path-to-regexp
+101 silly fetchNamedPackageData proxy-addr
+102 silly mapToRegistry name proxy-addr
+103 silly mapToRegistry using default registry
+104 silly mapToRegistry registry https://registry.npm.taobao.org/
+105 silly mapToRegistry data Result {
+105 silly mapToRegistry   raw: 'proxy-addr',
+105 silly mapToRegistry   scope: null,
+105 silly mapToRegistry   escapedName: 'proxy-addr',
+105 silly mapToRegistry   name: 'proxy-addr',
+105 silly mapToRegistry   rawSpec: '',
+105 silly mapToRegistry   spec: 'latest',
+105 silly mapToRegistry   type: 'tag' }
+106 silly mapToRegistry uri https://registry.npm.taobao.org/proxy-addr
+107 silly fetchNamedPackageData qs
+108 silly mapToRegistry name qs
+109 silly mapToRegistry using default registry
+110 silly mapToRegistry registry https://registry.npm.taobao.org/
+111 silly mapToRegistry data Result {
+111 silly mapToRegistry   raw: 'qs',
+111 silly mapToRegistry   scope: null,
+111 silly mapToRegistry   escapedName: 'qs',
+111 silly mapToRegistry   name: 'qs',
+111 silly mapToRegistry   rawSpec: '',
+111 silly mapToRegistry   spec: 'latest',
+111 silly mapToRegistry   type: 'tag' }
+112 silly mapToRegistry uri https://registry.npm.taobao.org/qs
+113 silly fetchNamedPackageData type-is
+114 silly mapToRegistry name type-is
+115 silly mapToRegistry using default registry
+116 silly mapToRegistry registry https://registry.npm.taobao.org/
+117 silly mapToRegistry data Result {
+117 silly mapToRegistry   raw: 'type-is',
+117 silly mapToRegistry   scope: null,
+117 silly mapToRegistry   escapedName: 'type-is',
+117 silly mapToRegistry   name: 'type-is',
+117 silly mapToRegistry   rawSpec: '',
+117 silly mapToRegistry   spec: 'latest',
+117 silly mapToRegistry   type: 'tag' }
+118 silly mapToRegistry uri https://registry.npm.taobao.org/type-is
+119 silly fetchNamedPackageData vary
+120 silly mapToRegistry name vary
+121 silly mapToRegistry using default registry
+122 silly mapToRegistry registry https://registry.npm.taobao.org/
+123 silly mapToRegistry data Result {
+123 silly mapToRegistry   raw: 'vary',
+123 silly mapToRegistry   scope: null,
+123 silly mapToRegistry   escapedName: 'vary',
+123 silly mapToRegistry   name: 'vary',
+123 silly mapToRegistry   rawSpec: '',
+123 silly mapToRegistry   spec: 'latest',
+123 silly mapToRegistry   type: 'tag' }
+124 silly mapToRegistry uri https://registry.npm.taobao.org/vary
+125 verbose request uri https://registry.npm.taobao.org/array-flatten
+126 verbose request no auth needed
+127 info attempt registry request try #1 at 11:55:12
+128 verbose etag "3760-IGCTKa6/yGUJp54ayyWACw"
+129 http request GET https://registry.npm.taobao.org/array-flatten
+130 verbose request uri https://registry.npm.taobao.org/content-type
+131 verbose request no auth needed
+132 info attempt registry request try #1 at 11:55:12
+133 verbose etag "2434-3Jdby1AMP2RosNvL7OoCjA"
+134 http request GET https://registry.npm.taobao.org/content-type
+135 verbose request uri https://registry.npm.taobao.org/cookie-signature
+136 verbose request no auth needed
+137 info attempt registry request try #1 at 11:55:12
+138 verbose etag "28aa-UWM8K2Q/A5poyfZ2hrGINw"
+139 http request GET https://registry.npm.taobao.org/cookie-signature
+140 verbose request uri https://registry.npm.taobao.org/merge-descriptors
+141 verbose request no auth needed
+142 info attempt registry request try #1 at 11:55:12
+143 verbose etag "2e60-b5JbaMZP26/sUTB0uik7RA"
+144 http request GET https://registry.npm.taobao.org/merge-descriptors
+145 verbose request uri https://registry.npm.taobao.org/content-disposition
+146 verbose request no auth needed
+147 info attempt registry request try #1 at 11:55:12
+148 verbose etag "551e-gq+kKhCNUx+QSrVgFJHJLA"
+149 http request GET https://registry.npm.taobao.org/content-disposition
+150 verbose request uri https://registry.npm.taobao.org/methods
+151 verbose request no auth needed
+152 info attempt registry request try #1 at 11:55:12
+153 verbose etag "2d6d-TP9xf+uPVenDeO2lB1ReRg"
+154 http request GET https://registry.npm.taobao.org/methods
+155 verbose request uri https://registry.npm.taobao.org/path-to-regexp
+156 verbose request no auth needed
+157 info attempt registry request try #1 at 11:55:12
+158 verbose etag "1a0ce-QRd4URLJAttMn3PXMwAnXg"
+159 http request GET https://registry.npm.taobao.org/path-to-regexp
+160 verbose request uri https://registry.npm.taobao.org/proxy-addr
+161 verbose request no auth needed
+162 info attempt registry request try #1 at 11:55:12
+163 verbose etag "719d-CMv+2MDqjHSWoNHlV2pjWA"
+164 http request GET https://registry.npm.taobao.org/proxy-addr
+165 verbose request uri https://registry.npm.taobao.org/qs
+166 verbose request no auth needed
+167 info attempt registry request try #1 at 11:55:12
+168 verbose etag "16318-rt1odq2kaL0NxsSPiSViVw"
+169 http request GET https://registry.npm.taobao.org/qs
+170 verbose request uri https://registry.npm.taobao.org/type-is
+171 verbose request no auth needed
+172 info attempt registry request try #1 at 11:55:12
+173 verbose etag "daa2-HVILkpVSY0VxxORMBZyjbA"
+174 http request GET https://registry.npm.taobao.org/type-is
+175 verbose request uri https://registry.npm.taobao.org/vary
+176 verbose request no auth needed
+177 info attempt registry request try #1 at 11:55:12
+178 verbose etag "2617-l9A0cq9SvzuqW1nd1GM0nQ"
+179 http request GET https://registry.npm.taobao.org/vary
+180 http 304 https://registry.npm.taobao.org/merge-descriptors
+181 verbose headers { date: 'Tue, 20 Dec 2016 03:55:14 GMT',
+181 verbose headers   connection: 'keep-alive',
+181 verbose headers   'x-current-requests': '1',
+181 verbose headers   etag: '"2e60-b5JbaMZP26/sUTB0uik7RA"',
+181 verbose headers   'x-readtime': '29' }
+182 silly get cb [ 304,
+182 silly get   { date: 'Tue, 20 Dec 2016 03:55:14 GMT',
+182 silly get     connection: 'keep-alive',
+182 silly get     'x-current-requests': '1',
+182 silly get     etag: '"2e60-b5JbaMZP26/sUTB0uik7RA"',
+182 silly get     'x-readtime': '29' } ]
+183 verbose etag https://registry.npm.taobao.org/merge-descriptors from cache
+184 verbose get saving merge-descriptors to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npm.taobao.org\merge-descriptors\.cache.json
+185 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+186 silly resolveWithNewModule merge-descriptors@1.0.1 checking installable status
+187 silly cache add args [ 'merge-descriptors@1.0.1', null ]
+188 verbose cache add spec merge-descriptors@1.0.1
+189 silly cache add parsed spec Result {
+189 silly cache add   raw: 'merge-descriptors@1.0.1',
+189 silly cache add   scope: null,
+189 silly cache add   escapedName: 'merge-descriptors',
+189 silly cache add   name: 'merge-descriptors',
+189 silly cache add   rawSpec: '1.0.1',
+189 silly cache add   spec: '1.0.1',
+189 silly cache add   type: 'version' }
+190 silly addNamed merge-descriptors@1.0.1
+191 verbose addNamed "1.0.1" is a plain semver version for merge-descriptors
+192 silly mapToRegistry name merge-descriptors
+193 silly mapToRegistry using default registry
+194 silly mapToRegistry registry https://registry.npm.taobao.org/
+195 silly mapToRegistry data Result {
+195 silly mapToRegistry   raw: 'merge-descriptors',
+195 silly mapToRegistry   scope: null,
+195 silly mapToRegistry   escapedName: 'merge-descriptors',
+195 silly mapToRegistry   name: 'merge-descriptors',
+195 silly mapToRegistry   rawSpec: '',
+195 silly mapToRegistry   spec: 'latest',
+195 silly mapToRegistry   type: 'tag' }
+196 silly mapToRegistry uri https://registry.npm.taobao.org/merge-descriptors
+197 verbose addNameVersion registry:https://registry.npm.taobao.org/merge-descriptors not in flight; fetching
+198 verbose get https://registry.npm.taobao.org/merge-descriptors not expired, no request
+199 silly cache afterAdd merge-descriptors@1.0.1
+200 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\merge-descriptors\1.0.1\package\package.json not in flight; writing
+201 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+202 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\merge-descriptors\1.0.1\package\package.json written
+203 http 304 https://registry.npm.taobao.org/proxy-addr
+204 verbose headers { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+204 verbose headers   connection: 'keep-alive',
+204 verbose headers   'x-current-requests': '1',
+204 verbose headers   etag: '"719d-CMv+2MDqjHSWoNHlV2pjWA"',
+204 verbose headers   'x-readtime': '36' }
+205 silly get cb [ 304,
+205 silly get   { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+205 silly get     connection: 'keep-alive',
+205 silly get     'x-current-requests': '1',
+205 silly get     etag: '"719d-CMv+2MDqjHSWoNHlV2pjWA"',
+205 silly get     'x-readtime': '36' } ]
+206 verbose etag https://registry.npm.taobao.org/proxy-addr from cache
+207 verbose get saving proxy-addr to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npm.taobao.org\proxy-addr\.cache.json
+208 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+209 http 304 https://registry.npm.taobao.org/cookie-signature
+210 verbose headers { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+210 verbose headers   connection: 'keep-alive',
+210 verbose headers   'x-current-requests': '1',
+210 verbose headers   etag: '"28aa-UWM8K2Q/A5poyfZ2hrGINw"',
+210 verbose headers   'x-readtime': '41' }
+211 silly get cb [ 304,
+211 silly get   { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+211 silly get     connection: 'keep-alive',
+211 silly get     'x-current-requests': '1',
+211 silly get     etag: '"28aa-UWM8K2Q/A5poyfZ2hrGINw"',
+211 silly get     'x-readtime': '41' } ]
+212 verbose etag https://registry.npm.taobao.org/cookie-signature from cache
+213 verbose get saving cookie-signature to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npm.taobao.org\cookie-signature\.cache.json
+214 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+215 silly resolveWithNewModule proxy-addr@1.1.2 checking installable status
+216 silly cache add args [ 'proxy-addr@~1.1.2', null ]
+217 verbose cache add spec proxy-addr@~1.1.2
+218 silly cache add parsed spec Result {
+218 silly cache add   raw: 'proxy-addr@~1.1.2',
+218 silly cache add   scope: null,
+218 silly cache add   escapedName: 'proxy-addr',
+218 silly cache add   name: 'proxy-addr',
+218 silly cache add   rawSpec: '~1.1.2',
+218 silly cache add   spec: '>=1.1.2 <1.2.0',
+218 silly cache add   type: 'range' }
+219 silly addNamed proxy-addr@>=1.1.2 <1.2.0
+220 verbose addNamed ">=1.1.2 <1.2.0" is a valid semver range for proxy-addr
+221 silly addNameRange { name: 'proxy-addr', range: '>=1.1.2 <1.2.0', hasData: false }
+222 silly mapToRegistry name proxy-addr
+223 silly mapToRegistry using default registry
+224 silly mapToRegistry registry https://registry.npm.taobao.org/
+225 silly mapToRegistry data Result {
+225 silly mapToRegistry   raw: 'proxy-addr',
+225 silly mapToRegistry   scope: null,
+225 silly mapToRegistry   escapedName: 'proxy-addr',
+225 silly mapToRegistry   name: 'proxy-addr',
+225 silly mapToRegistry   rawSpec: '',
+225 silly mapToRegistry   spec: 'latest',
+225 silly mapToRegistry   type: 'tag' }
+226 silly mapToRegistry uri https://registry.npm.taobao.org/proxy-addr
+227 verbose addNameRange registry:https://registry.npm.taobao.org/proxy-addr not in flight; fetching
+228 verbose get https://registry.npm.taobao.org/proxy-addr not expired, no request
+229 silly addNameRange number 2 { name: 'proxy-addr', range: '>=1.1.2 <1.2.0', hasData: true }
+230 silly addNameRange versions [ 'proxy-addr',
+230 silly addNameRange   [ '1.1.2',
+230 silly addNameRange     '1.1.1',
+230 silly addNameRange     '1.1.0',
+230 silly addNameRange     '1.0.10',
+230 silly addNameRange     '1.0.9',
+230 silly addNameRange     '1.0.8',
+230 silly addNameRange     '1.0.7',
+230 silly addNameRange     '1.0.6',
+230 silly addNameRange     '1.0.5',
+230 silly addNameRange     '1.0.4',
+230 silly addNameRange     '1.0.3',
+230 silly addNameRange     '1.0.2',
+230 silly addNameRange     '1.0.1',
+230 silly addNameRange     '1.0.0',
+230 silly addNameRange     '0.0.1',
+230 silly addNameRange     '0.0.0' ] ]
+231 silly addNamed proxy-addr@1.1.2
+232 verbose addNamed "1.1.2" is a plain semver version for proxy-addr
+233 silly resolveWithNewModule cookie-signature@1.0.6 checking installable status
+234 silly cache add args [ 'cookie-signature@1.0.6', null ]
+235 verbose cache add spec cookie-signature@1.0.6
+236 silly cache add parsed spec Result {
+236 silly cache add   raw: 'cookie-signature@1.0.6',
+236 silly cache add   scope: null,
+236 silly cache add   escapedName: 'cookie-signature',
+236 silly cache add   name: 'cookie-signature',
+236 silly cache add   rawSpec: '1.0.6',
+236 silly cache add   spec: '1.0.6',
+236 silly cache add   type: 'version' }
+237 silly addNamed cookie-signature@1.0.6
+238 verbose addNamed "1.0.6" is a plain semver version for cookie-signature
+239 silly mapToRegistry name cookie-signature
+240 silly mapToRegistry using default registry
+241 silly mapToRegistry registry https://registry.npm.taobao.org/
+242 silly mapToRegistry data Result {
+242 silly mapToRegistry   raw: 'cookie-signature',
+242 silly mapToRegistry   scope: null,
+242 silly mapToRegistry   escapedName: 'cookie-signature',
+242 silly mapToRegistry   name: 'cookie-signature',
+242 silly mapToRegistry   rawSpec: '',
+242 silly mapToRegistry   spec: 'latest',
+242 silly mapToRegistry   type: 'tag' }
+243 silly mapToRegistry uri https://registry.npm.taobao.org/cookie-signature
+244 verbose addNameVersion registry:https://registry.npm.taobao.org/cookie-signature not in flight; fetching
+245 verbose get https://registry.npm.taobao.org/cookie-signature not expired, no request
+246 silly cache afterAdd proxy-addr@1.1.2
+247 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\proxy-addr\1.1.2\package\package.json not in flight; writing
+248 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+249 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\proxy-addr\1.1.2\package\package.json written
+250 silly cache afterAdd cookie-signature@1.0.6
+251 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\cookie-signature\1.0.6\package\package.json not in flight; writing
+252 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+253 http 304 https://registry.npm.taobao.org/array-flatten
+254 verbose headers { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+254 verbose headers   connection: 'keep-alive',
+254 verbose headers   'x-current-requests': '1',
+254 verbose headers   etag: '"3760-IGCTKa6/yGUJp54ayyWACw"',
+254 verbose headers   'x-readtime': '94' }
+255 silly get cb [ 304,
+255 silly get   { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+255 silly get     connection: 'keep-alive',
+255 silly get     'x-current-requests': '1',
+255 silly get     etag: '"3760-IGCTKa6/yGUJp54ayyWACw"',
+255 silly get     'x-readtime': '94' } ]
+256 verbose etag https://registry.npm.taobao.org/array-flatten from cache
+257 verbose get saving array-flatten to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npm.taobao.org\array-flatten\.cache.json
+258 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+259 http 304 https://registry.npm.taobao.org/content-type
+260 verbose headers { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+260 verbose headers   connection: 'keep-alive',
+260 verbose headers   'x-current-requests': '1',
+260 verbose headers   etag: '"2434-3Jdby1AMP2RosNvL7OoCjA"',
+260 verbose headers   'x-readtime': '49' }
+261 silly get cb [ 304,
+261 silly get   { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+261 silly get     connection: 'keep-alive',
+261 silly get     'x-current-requests': '1',
+261 silly get     etag: '"2434-3Jdby1AMP2RosNvL7OoCjA"',
+261 silly get     'x-readtime': '49' } ]
+262 verbose etag https://registry.npm.taobao.org/content-type from cache
+263 verbose get saving content-type to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npm.taobao.org\content-type\.cache.json
+264 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+265 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\cookie-signature\1.0.6\package\package.json written
+266 silly resolveWithNewModule array-flatten@1.1.1 checking installable status
+267 silly cache add args [ 'array-flatten@1.1.1', null ]
+268 verbose cache add spec array-flatten@1.1.1
+269 silly cache add parsed spec Result {
+269 silly cache add   raw: 'array-flatten@1.1.1',
+269 silly cache add   scope: null,
+269 silly cache add   escapedName: 'array-flatten',
+269 silly cache add   name: 'array-flatten',
+269 silly cache add   rawSpec: '1.1.1',
+269 silly cache add   spec: '1.1.1',
+269 silly cache add   type: 'version' }
+270 silly addNamed array-flatten@1.1.1
+271 verbose addNamed "1.1.1" is a plain semver version for array-flatten
+272 silly mapToRegistry name array-flatten
+273 silly mapToRegistry using default registry
+274 silly mapToRegistry registry https://registry.npm.taobao.org/
+275 silly mapToRegistry data Result {
+275 silly mapToRegistry   raw: 'array-flatten',
+275 silly mapToRegistry   scope: null,
+275 silly mapToRegistry   escapedName: 'array-flatten',
+275 silly mapToRegistry   name: 'array-flatten',
+275 silly mapToRegistry   rawSpec: '',
+275 silly mapToRegistry   spec: 'latest',
+275 silly mapToRegistry   type: 'tag' }
+276 silly mapToRegistry uri https://registry.npm.taobao.org/array-flatten
+277 verbose addNameVersion registry:https://registry.npm.taobao.org/array-flatten not in flight; fetching
+278 verbose get https://registry.npm.taobao.org/array-flatten not expired, no request
+279 silly resolveWithNewModule content-type@1.0.2 checking installable status
+280 silly cache add args [ 'content-type@~1.0.2', null ]
+281 verbose cache add spec content-type@~1.0.2
+282 silly cache add parsed spec Result {
+282 silly cache add   raw: 'content-type@~1.0.2',
+282 silly cache add   scope: null,
+282 silly cache add   escapedName: 'content-type',
+282 silly cache add   name: 'content-type',
+282 silly cache add   rawSpec: '~1.0.2',
+282 silly cache add   spec: '>=1.0.2 <1.1.0',
+282 silly cache add   type: 'range' }
+283 silly addNamed content-type@>=1.0.2 <1.1.0
+284 verbose addNamed ">=1.0.2 <1.1.0" is a valid semver range for content-type
+285 silly addNameRange { name: 'content-type', range: '>=1.0.2 <1.1.0', hasData: false }
+286 silly mapToRegistry name content-type
+287 silly mapToRegistry using default registry
+288 silly mapToRegistry registry https://registry.npm.taobao.org/
+289 silly mapToRegistry data Result {
+289 silly mapToRegistry   raw: 'content-type',
+289 silly mapToRegistry   scope: null,
+289 silly mapToRegistry   escapedName: 'content-type',
+289 silly mapToRegistry   name: 'content-type',
+289 silly mapToRegistry   rawSpec: '',
+289 silly mapToRegistry   spec: 'latest',
+289 silly mapToRegistry   type: 'tag' }
+290 silly mapToRegistry uri https://registry.npm.taobao.org/content-type
+291 verbose addNameRange registry:https://registry.npm.taobao.org/content-type not in flight; fetching
+292 verbose get https://registry.npm.taobao.org/content-type not expired, no request
+293 silly addNameRange number 2 { name: 'content-type', range: '>=1.0.2 <1.1.0', hasData: true }
+294 silly addNameRange versions [ 'content-type', [ '1.0.2', '1.0.1', '1.0.0', '0.0.1' ] ]
+295 silly addNamed content-type@1.0.2
+296 verbose addNamed "1.0.2" is a plain semver version for content-type
+297 silly cache afterAdd array-flatten@1.1.1
+298 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\array-flatten\1.1.1\package\package.json not in flight; writing
+299 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+300 silly cache afterAdd content-type@1.0.2
+301 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\content-type\1.0.2\package\package.json not in flight; writing
+302 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+303 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\array-flatten\1.1.1\package\package.json written
+304 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\content-type\1.0.2\package\package.json written
+305 http 304 https://registry.npm.taobao.org/content-disposition
+306 verbose headers { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+306 verbose headers   connection: 'keep-alive',
+306 verbose headers   'x-current-requests': '1',
+306 verbose headers   etag: '"551e-gq+kKhCNUx+QSrVgFJHJLA"',
+306 verbose headers   'x-readtime': '78' }
+307 silly get cb [ 304,
+307 silly get   { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+307 silly get     connection: 'keep-alive',
+307 silly get     'x-current-requests': '1',
+307 silly get     etag: '"551e-gq+kKhCNUx+QSrVgFJHJLA"',
+307 silly get     'x-readtime': '78' } ]
+308 verbose etag https://registry.npm.taobao.org/content-disposition from cache
+309 verbose get saving content-disposition to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npm.taobao.org\content-disposition\.cache.json
+310 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+311 silly resolveWithNewModule content-disposition@0.5.1 checking installable status
+312 silly cache add args [ 'content-disposition@0.5.1', null ]
+313 verbose cache add spec content-disposition@0.5.1
+314 silly cache add parsed spec Result {
+314 silly cache add   raw: 'content-disposition@0.5.1',
+314 silly cache add   scope: null,
+314 silly cache add   escapedName: 'content-disposition',
+314 silly cache add   name: 'content-disposition',
+314 silly cache add   rawSpec: '0.5.1',
+314 silly cache add   spec: '0.5.1',
+314 silly cache add   type: 'version' }
+315 silly addNamed content-disposition@0.5.1
+316 verbose addNamed "0.5.1" is a plain semver version for content-disposition
+317 silly mapToRegistry name content-disposition
+318 silly mapToRegistry using default registry
+319 silly mapToRegistry registry https://registry.npm.taobao.org/
+320 silly mapToRegistry data Result {
+320 silly mapToRegistry   raw: 'content-disposition',
+320 silly mapToRegistry   scope: null,
+320 silly mapToRegistry   escapedName: 'content-disposition',
+320 silly mapToRegistry   name: 'content-disposition',
+320 silly mapToRegistry   rawSpec: '',
+320 silly mapToRegistry   spec: 'latest',
+320 silly mapToRegistry   type: 'tag' }
+321 silly mapToRegistry uri https://registry.npm.taobao.org/content-disposition
+322 verbose addNameVersion registry:https://registry.npm.taobao.org/content-disposition not in flight; fetching
+323 verbose get https://registry.npm.taobao.org/content-disposition not expired, no request
+324 silly cache afterAdd content-disposition@0.5.1
+325 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\content-disposition\0.5.1\package\package.json not in flight; writing
+326 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+327 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\content-disposition\0.5.1\package\package.json written
+328 http 304 https://registry.npm.taobao.org/methods
+329 verbose headers { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+329 verbose headers   connection: 'keep-alive',
+329 verbose headers   'x-current-requests': '1',
+329 verbose headers   etag: '"2d6d-TP9xf+uPVenDeO2lB1ReRg"',
+329 verbose headers   'x-readtime': '72' }
+330 silly get cb [ 304,
+330 silly get   { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+330 silly get     connection: 'keep-alive',
+330 silly get     'x-current-requests': '1',
+330 silly get     etag: '"2d6d-TP9xf+uPVenDeO2lB1ReRg"',
+330 silly get     'x-readtime': '72' } ]
+331 verbose etag https://registry.npm.taobao.org/methods from cache
+332 verbose get saving methods to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npm.taobao.org\methods\.cache.json
+333 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+334 http 304 https://registry.npm.taobao.org/type-is
+335 verbose headers { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+335 verbose headers   connection: 'keep-alive',
+335 verbose headers   'x-current-requests': '1',
+335 verbose headers   etag: '"daa2-HVILkpVSY0VxxORMBZyjbA"',
+335 verbose headers   'x-readtime': '87' }
+336 silly get cb [ 304,
+336 silly get   { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+336 silly get     connection: 'keep-alive',
+336 silly get     'x-current-requests': '1',
+336 silly get     etag: '"daa2-HVILkpVSY0VxxORMBZyjbA"',
+336 silly get     'x-readtime': '87' } ]
+337 verbose etag https://registry.npm.taobao.org/type-is from cache
+338 verbose get saving type-is to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npm.taobao.org\type-is\.cache.json
+339 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+340 silly resolveWithNewModule methods@1.1.2 checking installable status
+341 silly cache add args [ 'methods@~1.1.2', null ]
+342 verbose cache add spec methods@~1.1.2
+343 silly cache add parsed spec Result {
+343 silly cache add   raw: 'methods@~1.1.2',
+343 silly cache add   scope: null,
+343 silly cache add   escapedName: 'methods',
+343 silly cache add   name: 'methods',
+343 silly cache add   rawSpec: '~1.1.2',
+343 silly cache add   spec: '>=1.1.2 <1.2.0',
+343 silly cache add   type: 'range' }
+344 silly addNamed methods@>=1.1.2 <1.2.0
+345 verbose addNamed ">=1.1.2 <1.2.0" is a valid semver range for methods
+346 silly addNameRange { name: 'methods', range: '>=1.1.2 <1.2.0', hasData: false }
+347 silly mapToRegistry name methods
+348 silly mapToRegistry using default registry
+349 silly mapToRegistry registry https://registry.npm.taobao.org/
+350 silly mapToRegistry data Result {
+350 silly mapToRegistry   raw: 'methods',
+350 silly mapToRegistry   scope: null,
+350 silly mapToRegistry   escapedName: 'methods',
+350 silly mapToRegistry   name: 'methods',
+350 silly mapToRegistry   rawSpec: '',
+350 silly mapToRegistry   spec: 'latest',
+350 silly mapToRegistry   type: 'tag' }
+351 silly mapToRegistry uri https://registry.npm.taobao.org/methods
+352 verbose addNameRange registry:https://registry.npm.taobao.org/methods not in flight; fetching
+353 verbose get https://registry.npm.taobao.org/methods not expired, no request
+354 silly addNameRange number 2 { name: 'methods', range: '>=1.1.2 <1.2.0', hasData: true }
+355 silly addNameRange versions [ 'methods',
+355 silly addNameRange   [ '1.1.2', '1.1.1', '1.1.0', '1.0.1', '1.0.0', '0.1.0', '0.0.1' ] ]
+356 silly addNamed methods@1.1.2
+357 verbose addNamed "1.1.2" is a plain semver version for methods
+358 silly resolveWithNewModule type-is@1.6.14 checking installable status
+359 silly cache add args [ 'type-is@~1.6.13', null ]
+360 verbose cache add spec type-is@~1.6.13
+361 silly cache add parsed spec Result {
+361 silly cache add   raw: 'type-is@~1.6.13',
+361 silly cache add   scope: null,
+361 silly cache add   escapedName: 'type-is',
+361 silly cache add   name: 'type-is',
+361 silly cache add   rawSpec: '~1.6.13',
+361 silly cache add   spec: '>=1.6.13 <1.7.0',
+361 silly cache add   type: 'range' }
+362 silly addNamed type-is@>=1.6.13 <1.7.0
+363 verbose addNamed ">=1.6.13 <1.7.0" is a valid semver range for type-is
+364 silly addNameRange { name: 'type-is', range: '>=1.6.13 <1.7.0', hasData: false }
+365 silly mapToRegistry name type-is
+366 silly mapToRegistry using default registry
+367 silly mapToRegistry registry https://registry.npm.taobao.org/
+368 silly mapToRegistry data Result {
+368 silly mapToRegistry   raw: 'type-is',
+368 silly mapToRegistry   scope: null,
+368 silly mapToRegistry   escapedName: 'type-is',
+368 silly mapToRegistry   name: 'type-is',
+368 silly mapToRegistry   rawSpec: '',
+368 silly mapToRegistry   spec: 'latest',
+368 silly mapToRegistry   type: 'tag' }
+369 silly mapToRegistry uri https://registry.npm.taobao.org/type-is
+370 verbose addNameRange registry:https://registry.npm.taobao.org/type-is not in flight; fetching
+371 verbose get https://registry.npm.taobao.org/type-is not expired, no request
+372 silly addNameRange number 2 { name: 'type-is', range: '>=1.6.13 <1.7.0', hasData: true }
+373 silly addNameRange versions [ 'type-is',
+373 silly addNameRange   [ '1.6.14',
+373 silly addNameRange     '1.6.13',
+373 silly addNameRange     '1.6.12',
+373 silly addNameRange     '1.6.11',
+373 silly addNameRange     '1.6.10',
+373 silly addNameRange     '1.6.9',
+373 silly addNameRange     '1.6.8',
+373 silly addNameRange     '1.6.7',
+373 silly addNameRange     '1.6.6',
+373 silly addNameRange     '1.6.5',
+373 silly addNameRange     '1.6.4',
+373 silly addNameRange     '1.6.3',
+373 silly addNameRange     '1.6.2',
+373 silly addNameRange     '1.6.1',
+373 silly addNameRange     '1.6.0',
+373 silly addNameRange     '1.5.7',
+373 silly addNameRange     '1.5.6',
+373 silly addNameRange     '1.5.5',
+373 silly addNameRange     '1.5.4',
+373 silly addNameRange     '1.5.3',
+373 silly addNameRange     '1.5.2',
+373 silly addNameRange     '1.5.1',
+373 silly addNameRange     '1.5.0',
+373 silly addNameRange     '1.4.0',
+373 silly addNameRange     '1.3.2',
+373 silly addNameRange     '1.3.1',
+373 silly addNameRange     '1.3.0',
+373 silly addNameRange     '1.2.2',
+373 silly addNameRange     '1.2.1',
+373 silly addNameRange     '1.2.0',
+373 silly addNameRange     '1.1.0',
+373 silly addNameRange     '1.0.1',
+373 silly addNameRange     '1.0.0' ] ]
+374 silly addNamed type-is@1.6.14
+375 verbose addNamed "1.6.14" is a plain semver version for type-is
+376 silly cache afterAdd methods@1.1.2
+377 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\methods\1.1.2\package\package.json not in flight; writing
+378 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+379 silly cache afterAdd type-is@1.6.14
+380 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\type-is\1.6.14\package\package.json not in flight; writing
+381 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+382 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\methods\1.1.2\package\package.json written
+383 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\type-is\1.6.14\package\package.json written
+384 http 304 https://registry.npm.taobao.org/vary
+385 verbose headers { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+385 verbose headers   connection: 'keep-alive',
+385 verbose headers   'x-current-requests': '1',
+385 verbose headers   etag: '"2617-l9A0cq9SvzuqW1nd1GM0nQ"',
+385 verbose headers   'x-readtime': '102' }
+386 silly get cb [ 304,
+386 silly get   { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+386 silly get     connection: 'keep-alive',
+386 silly get     'x-current-requests': '1',
+386 silly get     etag: '"2617-l9A0cq9SvzuqW1nd1GM0nQ"',
+386 silly get     'x-readtime': '102' } ]
+387 verbose etag https://registry.npm.taobao.org/vary from cache
+388 verbose get saving vary to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npm.taobao.org\vary\.cache.json
+389 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+390 silly resolveWithNewModule vary@1.1.0 checking installable status
+391 silly cache add args [ 'vary@~1.1.0', null ]
+392 verbose cache add spec vary@~1.1.0
+393 silly cache add parsed spec Result {
+393 silly cache add   raw: 'vary@~1.1.0',
+393 silly cache add   scope: null,
+393 silly cache add   escapedName: 'vary',
+393 silly cache add   name: 'vary',
+393 silly cache add   rawSpec: '~1.1.0',
+393 silly cache add   spec: '>=1.1.0 <1.2.0',
+393 silly cache add   type: 'range' }
+394 silly addNamed vary@>=1.1.0 <1.2.0
+395 verbose addNamed ">=1.1.0 <1.2.0" is a valid semver range for vary
+396 silly addNameRange { name: 'vary', range: '>=1.1.0 <1.2.0', hasData: false }
+397 silly mapToRegistry name vary
+398 silly mapToRegistry using default registry
+399 silly mapToRegistry registry https://registry.npm.taobao.org/
+400 silly mapToRegistry data Result {
+400 silly mapToRegistry   raw: 'vary',
+400 silly mapToRegistry   scope: null,
+400 silly mapToRegistry   escapedName: 'vary',
+400 silly mapToRegistry   name: 'vary',
+400 silly mapToRegistry   rawSpec: '',
+400 silly mapToRegistry   spec: 'latest',
+400 silly mapToRegistry   type: 'tag' }
+401 silly mapToRegistry uri https://registry.npm.taobao.org/vary
+402 verbose addNameRange registry:https://registry.npm.taobao.org/vary not in flight; fetching
+403 verbose get https://registry.npm.taobao.org/vary not expired, no request
+404 silly addNameRange number 2 { name: 'vary', range: '>=1.1.0 <1.2.0', hasData: true }
+405 silly addNameRange versions [ 'vary', [ '1.1.0', '1.0.1', '1.0.0', '0.1.0', '0.0.0' ] ]
+406 silly addNamed vary@1.1.0
+407 verbose addNamed "1.1.0" is a plain semver version for vary
+408 silly cache afterAdd vary@1.1.0
+409 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\vary\1.1.0\package\package.json not in flight; writing
+410 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+411 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\vary\1.1.0\package\package.json written
+412 http 304 https://registry.npm.taobao.org/path-to-regexp
+413 verbose headers { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+413 verbose headers   connection: 'keep-alive',
+413 verbose headers   'x-current-requests': '1',
+413 verbose headers   etag: '"1a0ce-QRd4URLJAttMn3PXMwAnXg"',
+413 verbose headers   'x-readtime': '54' }
+414 silly get cb [ 304,
+414 silly get   { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+414 silly get     connection: 'keep-alive',
+414 silly get     'x-current-requests': '1',
+414 silly get     etag: '"1a0ce-QRd4URLJAttMn3PXMwAnXg"',
+414 silly get     'x-readtime': '54' } ]
+415 verbose etag https://registry.npm.taobao.org/path-to-regexp from cache
+416 verbose get saving path-to-regexp to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npm.taobao.org\path-to-regexp\.cache.json
+417 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+418 silly resolveWithNewModule path-to-regexp@0.1.7 checking installable status
+419 silly cache add args [ 'path-to-regexp@0.1.7', null ]
+420 verbose cache add spec path-to-regexp@0.1.7
+421 silly cache add parsed spec Result {
+421 silly cache add   raw: 'path-to-regexp@0.1.7',
+421 silly cache add   scope: null,
+421 silly cache add   escapedName: 'path-to-regexp',
+421 silly cache add   name: 'path-to-regexp',
+421 silly cache add   rawSpec: '0.1.7',
+421 silly cache add   spec: '0.1.7',
+421 silly cache add   type: 'version' }
+422 silly addNamed path-to-regexp@0.1.7
+423 verbose addNamed "0.1.7" is a plain semver version for path-to-regexp
+424 silly mapToRegistry name path-to-regexp
+425 silly mapToRegistry using default registry
+426 silly mapToRegistry registry https://registry.npm.taobao.org/
+427 silly mapToRegistry data Result {
+427 silly mapToRegistry   raw: 'path-to-regexp',
+427 silly mapToRegistry   scope: null,
+427 silly mapToRegistry   escapedName: 'path-to-regexp',
+427 silly mapToRegistry   name: 'path-to-regexp',
+427 silly mapToRegistry   rawSpec: '',
+427 silly mapToRegistry   spec: 'latest',
+427 silly mapToRegistry   type: 'tag' }
+428 silly mapToRegistry uri https://registry.npm.taobao.org/path-to-regexp
+429 verbose addNameVersion registry:https://registry.npm.taobao.org/path-to-regexp not in flight; fetching
+430 verbose get https://registry.npm.taobao.org/path-to-regexp not expired, no request
+431 silly cache afterAdd path-to-regexp@0.1.7
+432 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\path-to-regexp\0.1.7\package\package.json not in flight; writing
+433 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+434 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\path-to-regexp\0.1.7\package\package.json written
+435 http 200 https://registry.npm.taobao.org/qs
+436 verbose headers { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+436 verbose headers   'content-type': 'application/json; charset=utf-8',
+436 verbose headers   'content-length': '90921',
+436 verbose headers   connection: 'keep-alive',
+436 verbose headers   'x-current-requests': '1',
+436 verbose headers   etag: '"16329-Z8a4WGD7JuzozHSg+3Rc3Q"',
+436 verbose headers   'x-readtime': '113' }
+437 silly get cb [ 200,
+437 silly get   { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+437 silly get     'content-type': 'application/json; charset=utf-8',
+437 silly get     'content-length': '90921',
+437 silly get     connection: 'keep-alive',
+437 silly get     'x-current-requests': '1',
+437 silly get     etag: '"16329-Z8a4WGD7JuzozHSg+3Rc3Q"',
+437 silly get     'x-readtime': '113' } ]
+438 verbose get saving qs to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npm.taobao.org\qs\.cache.json
+439 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+440 silly resolveWithNewModule qs@6.2.0 checking installable status
+441 silly cache add args [ 'qs@6.2.0', null ]
+442 verbose cache add spec qs@6.2.0
+443 silly cache add parsed spec Result {
+443 silly cache add   raw: 'qs@6.2.0',
+443 silly cache add   scope: null,
+443 silly cache add   escapedName: 'qs',
+443 silly cache add   name: 'qs',
+443 silly cache add   rawSpec: '6.2.0',
+443 silly cache add   spec: '6.2.0',
+443 silly cache add   type: 'version' }
+444 silly addNamed qs@6.2.0
+445 verbose addNamed "6.2.0" is a plain semver version for qs
+446 silly mapToRegistry name qs
+447 silly mapToRegistry using default registry
+448 silly mapToRegistry registry https://registry.npm.taobao.org/
+449 silly mapToRegistry data Result {
+449 silly mapToRegistry   raw: 'qs',
+449 silly mapToRegistry   scope: null,
+449 silly mapToRegistry   escapedName: 'qs',
+449 silly mapToRegistry   name: 'qs',
+449 silly mapToRegistry   rawSpec: '',
+449 silly mapToRegistry   spec: 'latest',
+449 silly mapToRegistry   type: 'tag' }
+450 silly mapToRegistry uri https://registry.npm.taobao.org/qs
+451 verbose addNameVersion registry:https://registry.npm.taobao.org/qs not in flight; fetching
+452 verbose get https://registry.npm.taobao.org/qs not expired, no request
+453 silly cache afterAdd qs@6.2.0
+454 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\qs\6.2.0\package\package.json not in flight; writing
+455 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+456 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\qs\6.2.0\package\package.json written
+457 silly fetchNamedPackageData forwarded
+458 silly mapToRegistry name forwarded
+459 silly mapToRegistry using default registry
+460 silly mapToRegistry registry https://registry.npm.taobao.org/
+461 silly mapToRegistry data Result {
+461 silly mapToRegistry   raw: 'forwarded',
+461 silly mapToRegistry   scope: null,
+461 silly mapToRegistry   escapedName: 'forwarded',
+461 silly mapToRegistry   name: 'forwarded',
+461 silly mapToRegistry   rawSpec: '',
+461 silly mapToRegistry   spec: 'latest',
+461 silly mapToRegistry   type: 'tag' }
+462 silly mapToRegistry uri https://registry.npm.taobao.org/forwarded
+463 silly fetchNamedPackageData ipaddr.js
+464 silly mapToRegistry name ipaddr.js
+465 silly mapToRegistry using default registry
+466 silly mapToRegistry registry https://registry.npm.taobao.org/
+467 silly mapToRegistry data Result {
+467 silly mapToRegistry   raw: 'ipaddr.js',
+467 silly mapToRegistry   scope: null,
+467 silly mapToRegistry   escapedName: 'ipaddr.js',
+467 silly mapToRegistry   name: 'ipaddr.js',
+467 silly mapToRegistry   rawSpec: '',
+467 silly mapToRegistry   spec: 'latest',
+467 silly mapToRegistry   type: 'tag' }
+468 silly mapToRegistry uri https://registry.npm.taobao.org/ipaddr.js
+469 verbose request uri https://registry.npm.taobao.org/forwarded
+470 verbose request no auth needed
+471 info attempt registry request try #1 at 11:55:12
+472 verbose etag "d9f-nwXm8JGsvRwVVcstDwwBhw"
+473 http request GET https://registry.npm.taobao.org/forwarded
+474 verbose request uri https://registry.npm.taobao.org/ipaddr.js
+475 verbose request no auth needed
+476 info attempt registry request try #1 at 11:55:12
+477 verbose etag "7448-c/xlKnk+Da4NUdqTf9elKw"
+478 http request GET https://registry.npm.taobao.org/ipaddr.js
+479 http 304 https://registry.npm.taobao.org/forwarded
+480 verbose headers { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+480 verbose headers   connection: 'keep-alive',
+480 verbose headers   'x-current-requests': '1',
+480 verbose headers   etag: '"d9f-nwXm8JGsvRwVVcstDwwBhw"',
+480 verbose headers   'x-readtime': '17' }
+481 silly get cb [ 304,
+481 silly get   { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+481 silly get     connection: 'keep-alive',
+481 silly get     'x-current-requests': '1',
+481 silly get     etag: '"d9f-nwXm8JGsvRwVVcstDwwBhw"',
+481 silly get     'x-readtime': '17' } ]
+482 verbose etag https://registry.npm.taobao.org/forwarded from cache
+483 verbose get saving forwarded to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npm.taobao.org\forwarded\.cache.json
+484 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+485 silly resolveWithNewModule forwarded@0.1.0 checking installable status
+486 silly cache add args [ 'forwarded@~0.1.0', null ]
+487 verbose cache add spec forwarded@~0.1.0
+488 silly cache add parsed spec Result {
+488 silly cache add   raw: 'forwarded@~0.1.0',
+488 silly cache add   scope: null,
+488 silly cache add   escapedName: 'forwarded',
+488 silly cache add   name: 'forwarded',
+488 silly cache add   rawSpec: '~0.1.0',
+488 silly cache add   spec: '>=0.1.0 <0.2.0',
+488 silly cache add   type: 'range' }
+489 silly addNamed forwarded@>=0.1.0 <0.2.0
+490 verbose addNamed ">=0.1.0 <0.2.0" is a valid semver range for forwarded
+491 silly addNameRange { name: 'forwarded', range: '>=0.1.0 <0.2.0', hasData: false }
+492 silly mapToRegistry name forwarded
+493 silly mapToRegistry using default registry
+494 silly mapToRegistry registry https://registry.npm.taobao.org/
+495 silly mapToRegistry data Result {
+495 silly mapToRegistry   raw: 'forwarded',
+495 silly mapToRegistry   scope: null,
+495 silly mapToRegistry   escapedName: 'forwarded',
+495 silly mapToRegistry   name: 'forwarded',
+495 silly mapToRegistry   rawSpec: '',
+495 silly mapToRegistry   spec: 'latest',
+495 silly mapToRegistry   type: 'tag' }
+496 silly mapToRegistry uri https://registry.npm.taobao.org/forwarded
+497 verbose addNameRange registry:https://registry.npm.taobao.org/forwarded not in flight; fetching
+498 verbose get https://registry.npm.taobao.org/forwarded not expired, no request
+499 silly addNameRange number 2 { name: 'forwarded', range: '>=0.1.0 <0.2.0', hasData: true }
+500 silly addNameRange versions [ 'forwarded', [ '0.1.0' ] ]
+501 silly addNamed forwarded@0.1.0
+502 verbose addNamed "0.1.0" is a plain semver version for forwarded
+503 silly cache afterAdd forwarded@0.1.0
+504 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\forwarded\0.1.0\package\package.json not in flight; writing
+505 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+506 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\forwarded\0.1.0\package\package.json written
+507 http 304 https://registry.npm.taobao.org/ipaddr.js
+508 verbose headers { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+508 verbose headers   connection: 'keep-alive',
+508 verbose headers   'x-current-requests': '1',
+508 verbose headers   etag: '"7448-c/xlKnk+Da4NUdqTf9elKw"',
+508 verbose headers   'x-readtime': '17' }
+509 silly get cb [ 304,
+509 silly get   { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+509 silly get     connection: 'keep-alive',
+509 silly get     'x-current-requests': '1',
+509 silly get     etag: '"7448-c/xlKnk+Da4NUdqTf9elKw"',
+509 silly get     'x-readtime': '17' } ]
+510 verbose etag https://registry.npm.taobao.org/ipaddr.js from cache
+511 verbose get saving ipaddr.js to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npm.taobao.org\ipaddr.js\.cache.json
+512 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+513 silly resolveWithNewModule ipaddr.js@1.1.1 checking installable status
+514 silly cache add args [ 'ipaddr.js@1.1.1', null ]
+515 verbose cache add spec ipaddr.js@1.1.1
+516 silly cache add parsed spec Result {
+516 silly cache add   raw: 'ipaddr.js@1.1.1',
+516 silly cache add   scope: null,
+516 silly cache add   escapedName: 'ipaddr.js',
+516 silly cache add   name: 'ipaddr.js',
+516 silly cache add   rawSpec: '1.1.1',
+516 silly cache add   spec: '1.1.1',
+516 silly cache add   type: 'version' }
+517 silly addNamed ipaddr.js@1.1.1
+518 verbose addNamed "1.1.1" is a plain semver version for ipaddr.js
+519 silly mapToRegistry name ipaddr.js
+520 silly mapToRegistry using default registry
+521 silly mapToRegistry registry https://registry.npm.taobao.org/
+522 silly mapToRegistry data Result {
+522 silly mapToRegistry   raw: 'ipaddr.js',
+522 silly mapToRegistry   scope: null,
+522 silly mapToRegistry   escapedName: 'ipaddr.js',
+522 silly mapToRegistry   name: 'ipaddr.js',
+522 silly mapToRegistry   rawSpec: '',
+522 silly mapToRegistry   spec: 'latest',
+522 silly mapToRegistry   type: 'tag' }
+523 silly mapToRegistry uri https://registry.npm.taobao.org/ipaddr.js
+524 verbose addNameVersion registry:https://registry.npm.taobao.org/ipaddr.js not in flight; fetching
+525 verbose get https://registry.npm.taobao.org/ipaddr.js not expired, no request
+526 silly cache afterAdd ipaddr.js@1.1.1
+527 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\ipaddr.js\1.1.1\package\package.json not in flight; writing
+528 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+529 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\ipaddr.js\1.1.1\package\package.json written
+530 silly fetchNamedPackageData media-typer
+531 silly mapToRegistry name media-typer
+532 silly mapToRegistry using default registry
+533 silly mapToRegistry registry https://registry.npm.taobao.org/
+534 silly mapToRegistry data Result {
+534 silly mapToRegistry   raw: 'media-typer',
+534 silly mapToRegistry   scope: null,
+534 silly mapToRegistry   escapedName: 'media-typer',
+534 silly mapToRegistry   name: 'media-typer',
+534 silly mapToRegistry   rawSpec: '',
+534 silly mapToRegistry   spec: 'latest',
+534 silly mapToRegistry   type: 'tag' }
+535 silly mapToRegistry uri https://registry.npm.taobao.org/media-typer
+536 verbose request uri https://registry.npm.taobao.org/media-typer
+537 verbose request no auth needed
+538 info attempt registry request try #1 at 11:55:12
+539 verbose etag "2038-82Thew74aXhcDx/8014zBQ"
+540 http request GET https://registry.npm.taobao.org/media-typer
+541 http 304 https://registry.npm.taobao.org/media-typer
+542 verbose headers { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+542 verbose headers   connection: 'keep-alive',
+542 verbose headers   'x-current-requests': '1',
+542 verbose headers   etag: '"2038-82Thew74aXhcDx/8014zBQ"',
+542 verbose headers   'x-readtime': '12' }
+543 silly get cb [ 304,
+543 silly get   { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+543 silly get     connection: 'keep-alive',
+543 silly get     'x-current-requests': '1',
+543 silly get     etag: '"2038-82Thew74aXhcDx/8014zBQ"',
+543 silly get     'x-readtime': '12' } ]
+544 verbose etag https://registry.npm.taobao.org/media-typer from cache
+545 verbose get saving media-typer to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npm.taobao.org\media-typer\.cache.json
+546 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+547 silly resolveWithNewModule media-typer@0.3.0 checking installable status
+548 silly cache add args [ 'media-typer@0.3.0', null ]
+549 verbose cache add spec media-typer@0.3.0
+550 silly cache add parsed spec Result {
+550 silly cache add   raw: 'media-typer@0.3.0',
+550 silly cache add   scope: null,
+550 silly cache add   escapedName: 'media-typer',
+550 silly cache add   name: 'media-typer',
+550 silly cache add   rawSpec: '0.3.0',
+550 silly cache add   spec: '0.3.0',
+550 silly cache add   type: 'version' }
+551 silly addNamed media-typer@0.3.0
+552 verbose addNamed "0.3.0" is a plain semver version for media-typer
+553 silly mapToRegistry name media-typer
+554 silly mapToRegistry using default registry
+555 silly mapToRegistry registry https://registry.npm.taobao.org/
+556 silly mapToRegistry data Result {
+556 silly mapToRegistry   raw: 'media-typer',
+556 silly mapToRegistry   scope: null,
+556 silly mapToRegistry   escapedName: 'media-typer',
+556 silly mapToRegistry   name: 'media-typer',
+556 silly mapToRegistry   rawSpec: '',
+556 silly mapToRegistry   spec: 'latest',
+556 silly mapToRegistry   type: 'tag' }
+557 silly mapToRegistry uri https://registry.npm.taobao.org/media-typer
+558 verbose addNameVersion registry:https://registry.npm.taobao.org/media-typer not in flight; fetching
+559 verbose get https://registry.npm.taobao.org/media-typer not expired, no request
+560 silly cache afterAdd media-typer@0.3.0
+561 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\media-typer\0.3.0\package\package.json not in flight; writing
+562 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+563 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\media-typer\0.3.0\package\package.json written
+564 silly fetchNamedPackageData fsevents
+565 silly mapToRegistry name fsevents
+566 silly mapToRegistry using default registry
+567 silly mapToRegistry registry https://registry.npm.taobao.org/
+568 silly mapToRegistry data Result {
+568 silly mapToRegistry   raw: 'fsevents',
+568 silly mapToRegistry   scope: null,
+568 silly mapToRegistry   escapedName: 'fsevents',
+568 silly mapToRegistry   name: 'fsevents',
+568 silly mapToRegistry   rawSpec: '',
+568 silly mapToRegistry   spec: 'latest',
+568 silly mapToRegistry   type: 'tag' }
+569 silly mapToRegistry uri https://registry.npm.taobao.org/fsevents
+570 verbose request uri https://registry.npm.taobao.org/fsevents
+571 verbose request no auth needed
+572 info attempt registry request try #1 at 11:55:12
+573 verbose etag "d0d1-/Hnw6Le0OXj7/OKmm9JNGQ"
+574 http request GET https://registry.npm.taobao.org/fsevents
+575 http 304 https://registry.npm.taobao.org/fsevents
+576 verbose headers { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+576 verbose headers   connection: 'keep-alive',
+576 verbose headers   'x-current-requests': '1',
+576 verbose headers   etag: '"d0d1-/Hnw6Le0OXj7/OKmm9JNGQ"',
+576 verbose headers   'x-readtime': '36' }
+577 silly get cb [ 304,
+577 silly get   { date: 'Tue, 20 Dec 2016 03:55:15 GMT',
+577 silly get     connection: 'keep-alive',
+577 silly get     'x-current-requests': '1',
+577 silly get     etag: '"d0d1-/Hnw6Le0OXj7/OKmm9JNGQ"',
+577 silly get     'x-readtime': '36' } ]
+578 verbose etag https://registry.npm.taobao.org/fsevents from cache
+579 verbose get saving fsevents to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npm.taobao.org\fsevents\.cache.json
+580 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+581 silly resolveWithNewModule fsevents@1.0.15 checking installable status
+582 silly loadAllDepsIntoIdealTree Finishing
+583 silly loadIdealTree Finishing
+584 silly currentTree property@1.0.0
+584 silly currentTree +-- abbrev@1.0.9
+584 silly currentTree +-- accepts@1.3.3
+584 silly currentTree +-- accord@0.26.3
+584 silly currentTree | +-- glob@7.1.1
+584 silly currentTree | +-- minimatch@3.0.3
+584 silly currentTree | `-- semver@5.3.0
+584 silly currentTree +-- acorn-jsx@3.0.1
+584 silly currentTree +-- acorn-object-spread@1.0.0
+584 silly currentTree +-- acorn@3.3.0
+584 silly currentTree +-- after@0.8.1
+584 silly currentTree +-- align-text@0.1.4
+584 silly currentTree +-- amdefine@1.0.1
+584 silly currentTree +-- ansi-regex@2.0.0
+584 silly currentTree +-- ansi-styles@2.2.1
+584 silly currentTree +-- anymatch@1.3.0
+584 silly currentTree +-- archy@1.0.0
+584 silly currentTree +-- arr-diff@2.0.0
+584 silly currentTree +-- arr-flatten@1.0.1
+584 silly currentTree +-- array-differ@1.0.0
+584 silly currentTree +-- array-find-index@1.0.2
+584 silly currentTree +-- array-flatten@1.1.1
+584 silly currentTree +-- array-uniq@1.0.3
+584 silly currentTree +-- array-unique@0.2.1
+584 silly currentTree +-- arraybuffer.slice@0.0.6
+584 silly currentTree +-- arrify@1.0.1
+584 silly currentTree +-- asn1@0.2.3
+584 silly currentTree +-- assert-plus@0.2.0
+584 silly currentTree +-- async-each-series@0.1.1
+584 silly currentTree +-- async-each@1.0.1
+584 silly currentTree +-- async@0.2.10
+584 silly currentTree +-- asynckit@0.4.0
+584 silly currentTree +-- aws-sign2@0.6.0
+584 silly currentTree +-- aws4@1.5.0
+584 silly currentTree +-- backo2@1.0.2
+584 silly currentTree +-- balanced-match@0.4.2
+584 silly currentTree +-- base64-arraybuffer@0.1.5
+584 silly currentTree +-- base64id@0.1.0
+584 silly currentTree +-- batch@0.5.3
+584 silly currentTree +-- bcrypt-pbkdf@1.0.0
+584 silly currentTree +-- beeper@1.1.1
+584 silly currentTree +-- better-assert@1.0.2
+584 silly currentTree +-- binary-extensions@1.8.0
+584 silly currentTree +-- blob@0.0.4
+584 silly currentTree +-- boom@2.10.1
+584 silly currentTree +-- brace-expansion@1.1.6
+584 silly currentTree +-- braces@1.8.5
+584 silly currentTree +-- browser-sync-client@2.4.4
+584 silly currentTree +-- browser-sync-ui@0.6.2
+584 silly currentTree +-- browser-sync@2.18.5
+584 silly currentTree | +-- camelcase@3.0.0
+584 silly currentTree | +-- cliui@3.2.0
+584 silly currentTree | +-- qs@6.2.1
+584 silly currentTree | +-- window-size@0.2.0
+584 silly currentTree | `-- yargs@6.4.0
+584 silly currentTree +-- bs-recipes@1.3.2
+584 silly currentTree +-- buble@0.12.5
+584 silly currentTree +-- bubleify@0.5.1
+584 silly currentTree | `-- object-assign@4.1.0
+584 silly currentTree +-- buffer-shims@1.0.0
+584 silly currentTree +-- bufferstreams@1.0.1
+584 silly currentTree +-- builtin-modules@1.1.1
+584 silly currentTree +-- callsite@1.0.0
+584 silly currentTree +-- camelcase-keys@2.1.0
+584 silly currentTree +-- camelcase@2.1.1
+584 silly currentTree +-- caseless@0.11.0
+584 silly currentTree +-- center-align@0.1.3
+584 silly currentTree +-- chalk@1.1.3
+584 silly currentTree +-- chokidar@1.6.1
+584 silly currentTree +-- clean-css@3.4.22
+584 silly currentTree | +-- commander@2.8.1
+584 silly currentTree | `-- source-map@0.4.4
+584 silly currentTree +-- cliui@2.1.0
+584 silly currentTree +-- clone-stats@0.0.1
+584 silly currentTree +-- clone@1.0.2
+584 silly currentTree +-- code-point-at@1.1.0
+584 silly currentTree +-- colors@1.1.2
+584 silly currentTree +-- combined-stream@1.0.5
+584 silly currentTree +-- commander@2.9.0
+584 silly currentTree +-- component-bind@1.0.0
+584 silly currentTree +-- component-emitter@1.1.2
+584 silly currentTree +-- component-inherit@0.0.3
+584 silly currentTree +-- concat-map@0.0.1
+584 silly currentTree +-- configstore@1.4.0
+584 silly currentTree | `-- object-assign@4.1.0
+584 silly currentTree +-- connect-history-api-fallback@1.3.0
+584 silly currentTree +-- connect@3.5.0
+584 silly currentTree +-- content-disposition@0.5.1
+584 silly currentTree +-- content-type@1.0.2
+584 silly currentTree +-- convert-source-map@1.3.0
+584 silly currentTree +-- cookie-signature@1.0.6
+584 silly currentTree +-- cookie@0.3.1
+584 silly currentTree +-- core-util-is@1.0.2
+584 silly currentTree +-- cryptiles@2.0.5
+584 silly currentTree +-- css-parse@1.7.0
+584 silly currentTree +-- currently-unhandled@0.4.1
+584 silly currentTree +-- dashdash@1.14.1
+584 silly currentTree | `-- assert-plus@1.0.0
+584 silly currentTree +-- dateformat@1.0.12
+584 silly currentTree +-- debug@2.2.0
+584 silly currentTree +-- decamelize@1.2.0
+584 silly currentTree +-- deep-extend@0.4.1
+584 silly currentTree +-- defaults@1.0.3
+584 silly currentTree +-- delayed-stream@1.0.0
+584 silly currentTree +-- depd@1.1.0
+584 silly currentTree +-- deprecated@0.0.1
+584 silly currentTree +-- destroy@1.0.4
+584 silly currentTree +-- detect-file@0.1.0
+584 silly currentTree +-- dev-ip@1.0.1
+584 silly currentTree +-- duplexer@0.1.1
+584 silly currentTree +-- duplexer2@0.0.2
+584 silly currentTree +-- duplexify@3.5.0
+584 silly currentTree | +-- end-of-stream@1.0.0
+584 silly currentTree | +-- isarray@1.0.0
+584 silly currentTree | `-- readable-stream@2.2.2
+584 silly currentTree +-- easy-extender@2.3.2
+584 silly currentTree | `-- lodash@3.10.1
+584 silly currentTree +-- eazy-logger@3.0.2
+584 silly currentTree +-- ecc-jsbn@0.1.1
+584 silly currentTree +-- ee-first@1.1.1
+584 silly currentTree +-- emitter-steward@1.0.0
+584 silly currentTree +-- encodeurl@1.0.1
+584 silly currentTree +-- end-of-stream@0.1.5
+584 silly currentTree +-- engine.io-client@1.8.0
+584 silly currentTree | +-- component-emitter@1.2.1
+584 silly currentTree | +-- debug@2.3.3
+584 silly currentTree | `-- ms@0.7.2
+584 silly currentTree +-- engine.io-parser@1.3.1
+584 silly currentTree | `-- has-binary@0.1.6
+584 silly currentTree +-- engine.io@1.8.0
+584 silly currentTree | +-- debug@2.3.3
+584 silly currentTree | `-- ms@0.7.2
+584 silly currentTree +-- error-ex@1.3.0
+584 silly currentTree +-- es6-promise@3.3.1
+584 silly currentTree +-- escape-html@1.0.3
+584 silly currentTree +-- escape-string-regexp@1.0.5
+584 silly currentTree +-- etag@1.7.0
+584 silly currentTree +-- event-stream@3.3.4
+584 silly currentTree +-- eventemitter3@1.2.0
+584 silly currentTree +-- expand-brackets@0.1.5
+584 silly currentTree +-- expand-range@1.8.2
+584 silly currentTree +-- expand-tilde@1.2.2
+584 silly currentTree +-- express@4.14.0
+584 silly currentTree +-- extend@3.0.0
+584 silly currentTree +-- extglob@0.3.2
+584 silly currentTree +-- extsprintf@1.0.2
+584 silly currentTree +-- fancy-log@1.2.0
+584 silly currentTree +-- filename-regex@2.0.0
+584 silly currentTree +-- fill-range@2.2.3
+584 silly currentTree +-- finalhandler@0.5.0
+584 silly currentTree +-- find-index@0.1.1
+584 silly currentTree +-- find-up@1.1.2
+584 silly currentTree +-- findup-sync@0.4.3
+584 silly currentTree +-- fined@1.0.2
+584 silly currentTree +-- first-chunk-stream@1.0.0
+584 silly currentTree +-- flagged-respawn@0.3.2
+584 silly currentTree +-- for-in@0.1.6
+584 silly currentTree +-- for-own@0.1.4
+584 silly currentTree +-- forever-agent@0.6.1
+584 silly currentTree +-- form-data@2.1.2
+584 silly currentTree +-- formidable@1.0.17
+584 silly currentTree +-- forwarded@0.1.0
+584 silly currentTree +-- fresh@0.3.0
+584 silly currentTree +-- from@0.1.3
+584 silly currentTree +-- fs-exists-sync@0.1.0
+584 silly currentTree +-- fs-extra@1.0.0
+584 silly currentTree +-- fs.realpath@1.0.0
+584 silly currentTree +-- gaze@0.5.2
+584 silly currentTree +-- generate-function@2.0.0
+584 silly currentTree +-- generate-object-property@1.2.0
+584 silly currentTree +-- get-caller-file@1.0.2
+584 silly currentTree +-- get-stdin@4.0.1
+584 silly currentTree +-- getpass@0.1.6
+584 silly currentTree | `-- assert-plus@1.0.0
+584 silly currentTree +-- glob-base@0.3.0
+584 silly currentTree +-- glob-parent@2.0.0
+584 silly currentTree +-- glob-stream@3.1.18
+584 silly currentTree | +-- readable-stream@1.0.34
+584 silly currentTree | `-- through2@0.6.5
+584 silly currentTree +-- glob-watcher@0.0.6
+584 silly currentTree +-- glob@4.5.3
+584 silly currentTree +-- glob2base@0.0.12
+584 silly currentTree +-- global-modules@0.2.3
+584 silly currentTree +-- global-prefix@0.1.5
+584 silly currentTree +-- globule@0.1.0
+584 silly currentTree | +-- glob@3.1.21
+584 silly currentTree | +-- graceful-fs@1.2.3
+584 silly currentTree | +-- inherits@1.0.2
+584 silly currentTree | `-- minimatch@0.2.14
+584 silly currentTree +-- glogg@1.0.0
+584 silly currentTree +-- got@3.3.1
+584 silly currentTree +-- graceful-fs@4.1.11
+584 silly currentTree +-- graceful-readlink@1.0.1
+584 silly currentTree +-- gulp-minify-css@1.2.4
+584 silly currentTree | +-- isarray@1.0.0
+584 silly currentTree | +-- object-assign@4.1.0
+584 silly currentTree | `-- readable-stream@2.2.2
+584 silly currentTree +-- gulp-nodemon@2.2.1
+584 silly currentTree +-- gulp-stylus@2.6.0
+584 silly currentTree +-- gulp-uglify@2.0.0
+584 silly currentTree | +-- lodash@4.17.2
+584 silly currentTree | `-- uglify-js@2.7.0
+584 silly currentTree +-- gulp-util@3.0.7
+584 silly currentTree +-- gulp@3.9.1
+584 silly currentTree +-- gulplog@1.0.0
+584 silly currentTree +-- har-validator@2.0.6
+584 silly currentTree +-- has-ansi@2.0.0
+584 silly currentTree +-- has-binary@0.1.7
+584 silly currentTree +-- has-cors@1.1.0
+584 silly currentTree +-- has-gulplog@0.1.0
+584 silly currentTree +-- hawk@3.1.3
+584 silly currentTree +-- hoek@2.16.3
+584 silly currentTree +-- homedir-polyfill@1.0.1
+584 silly currentTree +-- hosted-git-info@2.1.5
+584 silly currentTree +-- http-errors@1.5.1
+584 silly currentTree +-- http-proxy@1.15.2
+584 silly currentTree +-- http-signature@1.1.1
+584 silly currentTree +-- ignore-by-default@1.0.1
+584 silly currentTree +-- immutable@3.8.1
+584 silly currentTree +-- imurmurhash@0.1.4
+584 silly currentTree +-- indent-string@2.1.0
+584 silly currentTree +-- indexof@0.0.1
+584 silly currentTree +-- indx@0.2.3
+584 silly currentTree +-- infinity-agent@2.0.3
+584 silly currentTree +-- inflight@1.0.6
+584 silly currentTree +-- inherits@2.0.3
+584 silly currentTree +-- ini@1.3.4
+584 silly currentTree +-- interpret@1.0.1
+584 silly currentTree +-- invert-kv@1.0.0
+584 silly currentTree +-- ipaddr.js@1.1.1
+584 silly currentTree +-- is-absolute@0.2.6
+584 silly currentTree +-- is-arrayish@0.2.1
+584 silly currentTree +-- is-binary-path@1.0.1
+584 silly currentTree +-- is-buffer@1.1.4
+584 silly currentTree +-- is-builtin-module@1.0.0
+584 silly currentTree +-- is-dotfile@1.0.2
+584 silly currentTree +-- is-equal-shallow@0.1.3
+584 silly currentTree +-- is-extendable@0.1.1
+584 silly currentTree +-- is-extglob@1.0.0
+584 silly currentTree +-- is-finite@1.0.2
+584 silly currentTree +-- is-fullwidth-code-point@1.0.0
+584 silly currentTree +-- is-glob@2.0.1
+584 silly currentTree +-- is-my-json-valid@2.15.0
+584 silly currentTree +-- is-npm@1.0.0
+584 silly currentTree +-- is-number-like@1.0.6
+584 silly currentTree +-- is-number@2.1.0
+584 silly currentTree +-- is-posix-bracket@0.1.1
+584 silly currentTree +-- is-primitive@2.0.0
+584 silly currentTree +-- is-property@1.0.2
+584 silly currentTree +-- is-redirect@1.0.0
+584 silly currentTree +-- is-relative@0.2.1
+584 silly currentTree +-- is-stream@1.1.0
+584 silly currentTree +-- is-typedarray@1.0.0
+584 silly currentTree +-- is-unc-path@0.1.2
+584 silly currentTree +-- is-utf8@0.2.1
+584 silly currentTree +-- is-windows@0.2.0
+584 silly currentTree +-- isarray@0.0.1
+584 silly currentTree +-- isexe@1.1.2
+584 silly currentTree +-- isobject@2.1.0
+584 silly currentTree | `-- isarray@1.0.0
+584 silly currentTree +-- isstream@0.1.2
+584 silly currentTree +-- jodid25519@1.0.2
+584 silly currentTree +-- jsbn@0.1.0
+584 silly currentTree +-- json-schema@0.2.3
+584 silly currentTree +-- json-stringify-safe@5.0.1
+584 silly currentTree +-- json3@3.3.2
+584 silly currentTree +-- jsonfile@2.4.0
+584 silly currentTree +-- jsonpointer@4.0.0
+584 silly currentTree +-- jsprim@1.3.1
+584 silly currentTree +-- kind-of@3.1.0
+584 silly currentTree +-- klaw@1.3.1
+584 silly currentTree +-- latest-version@1.0.1
+584 silly currentTree +-- lazy-cache@1.0.4
+584 silly currentTree +-- lcid@1.0.0
+584 silly currentTree +-- liftoff@2.3.0
+584 silly currentTree +-- limiter@1.1.0
+584 silly currentTree +-- load-json-file@1.1.0
+584 silly currentTree +-- localtunnel@1.8.2
+584 silly currentTree | +-- camelcase@1.2.1
+584 silly currentTree | +-- cliui@3.2.0
+584 silly currentTree | +-- window-size@0.1.4
+584 silly currentTree | `-- yargs@3.29.0
+584 silly currentTree +-- lodash._baseassign@3.2.0
+584 silly currentTree +-- lodash._basecopy@3.0.1
+584 silly currentTree +-- lodash._basetostring@3.0.1
+584 silly currentTree +-- lodash._basevalues@3.0.0
+584 silly currentTree +-- lodash._bindcallback@3.0.1
+584 silly currentTree +-- lodash._createassigner@3.1.1
+584 silly currentTree +-- lodash._getnative@3.9.1
+584 silly currentTree +-- lodash._isiterateecall@3.0.9
+584 silly currentTree +-- lodash._reescape@3.0.0
+584 silly currentTree +-- lodash._reevaluate@3.0.0
+584 silly currentTree +-- lodash._reinterpolate@3.0.0
+584 silly currentTree +-- lodash._root@3.0.1
+584 silly currentTree +-- lodash.assign@3.2.0
+584 silly currentTree +-- lodash.assignwith@4.2.0
+584 silly currentTree +-- lodash.clone@4.5.0
+584 silly currentTree +-- lodash.defaults@4.2.0
+584 silly currentTree +-- lodash.escape@3.2.0
+584 silly currentTree +-- lodash.flatten@4.4.0
+584 silly currentTree +-- lodash.isarguments@3.1.0
+584 silly currentTree +-- lodash.isarray@3.0.4
+584 silly currentTree +-- lodash.isempty@4.4.0
+584 silly currentTree +-- lodash.isfinite@3.3.2
+584 silly currentTree +-- lodash.isplainobject@4.0.6
+584 silly currentTree +-- lodash.isstring@4.0.1
+584 silly currentTree +-- lodash.keys@3.1.2
+584 silly currentTree +-- lodash.mapvalues@4.6.0
+584 silly currentTree +-- lodash.merge@4.6.0
+584 silly currentTree +-- lodash.partialright@4.2.1
+584 silly currentTree +-- lodash.pick@4.4.0
+584 silly currentTree +-- lodash.restparam@3.6.1
+584 silly currentTree +-- lodash.template@3.6.2
+584 silly currentTree +-- lodash.templatesettings@3.1.1
+584 silly currentTree +-- lodash.uniq@4.5.0
+584 silly currentTree +-- lodash@1.0.2
+584 silly currentTree +-- longest@1.0.1
+584 silly currentTree +-- loud-rejection@1.6.0
+584 silly currentTree +-- lowercase-keys@1.0.0
+584 silly currentTree +-- lru-cache@2.7.3
+584 silly currentTree +-- magic-string@0.14.0
+584 silly currentTree +-- make-error-cause@1.2.2
+584 silly currentTree +-- make-error@1.2.1
+584 silly currentTree +-- map-cache@0.2.2
+584 silly currentTree +-- map-obj@1.0.1
+584 silly currentTree +-- map-stream@0.1.0
+584 silly currentTree +-- media-typer@0.3.0
+584 silly currentTree +-- meow@3.7.0
+584 silly currentTree | `-- object-assign@4.1.0
+584 silly currentTree +-- merge-descriptors@1.0.1
+584 silly currentTree +-- methods@1.1.2
+584 silly currentTree +-- micromatch@2.3.11
+584 silly currentTree +-- mime-db@1.25.0
+584 silly currentTree +-- mime-types@2.1.13
+584 silly currentTree +-- mime@1.3.4
+584 silly currentTree +-- minimatch@2.0.10
+584 silly currentTree +-- minimist@1.2.0
+584 silly currentTree +-- mkdirp@0.5.1
+584 silly currentTree | `-- minimist@0.0.8
+584 silly currentTree +-- ms@0.7.1
+584 silly currentTree +-- multipipe@0.1.2
+584 silly currentTree +-- natives@1.1.0
+584 silly currentTree +-- negotiator@0.6.1
+584 silly currentTree +-- nested-error-stacks@1.0.2
+584 silly currentTree +-- node-uuid@1.4.7
+584 silly currentTree +-- nodemon@1.11.0
+584 silly currentTree | +-- lodash.defaults@3.1.2
+584 silly currentTree | `-- minimatch@3.0.3
+584 silly currentTree +-- nopt@3.0.6
+584 silly currentTree +-- normalize-package-data@2.3.5
+584 silly currentTree +-- normalize-path@2.0.1
+584 silly currentTree +-- number-is-nan@1.0.1
+584 silly currentTree +-- oauth-sign@0.8.2
+584 silly currentTree +-- object-assign@3.0.0
+584 silly currentTree +-- object-component@0.0.3
+584 silly currentTree +-- object-path@0.9.2
+584 silly currentTree +-- object.omit@2.0.1
+584 silly currentTree +-- on-finished@2.3.0
+584 silly currentTree +-- once@1.3.3
+584 silly currentTree +-- openurl@1.1.0
+584 silly currentTree +-- opn@4.0.2
+584 silly currentTree | `-- object-assign@4.1.0
+584 silly currentTree +-- options@0.0.6
+584 silly currentTree +-- orchestrator@0.3.8
+584 silly currentTree +-- ordered-read-streams@0.1.0
+584 silly currentTree +-- os-homedir@1.0.2
+584 silly currentTree +-- os-locale@1.4.0
+584 silly currentTree +-- os-tmpdir@1.0.2
+584 silly currentTree +-- osenv@0.1.3
+584 silly currentTree +-- package-json@1.2.0
+584 silly currentTree +-- parse-filepath@1.0.1
+584 silly currentTree +-- parse-glob@3.0.4
+584 silly currentTree +-- parse-json@2.2.0
+584 silly currentTree +-- parse-passwd@1.0.0
+584 silly currentTree +-- parsejson@0.0.3
+584 silly currentTree +-- parseqs@0.0.5
+584 silly currentTree +-- parseuri@0.0.5
+584 silly currentTree +-- parseurl@1.3.1
+584 silly currentTree +-- path-exists@2.1.0
+584 silly currentTree +-- path-is-absolute@1.0.1
+584 silly currentTree +-- path-root-regex@0.1.2
+584 silly currentTree +-- path-root@0.1.1
+584 silly currentTree +-- path-to-regexp@0.1.7
+584 silly currentTree +-- path-type@1.1.0
+584 silly currentTree +-- pause-stream@0.0.11
+584 silly currentTree +-- pify@2.3.0
+584 silly currentTree +-- pinkie-promise@2.0.1
+584 silly currentTree +-- pinkie@2.0.4
+584 silly currentTree +-- portscanner@2.1.1
+584 silly currentTree | `-- async@1.5.2
+584 silly currentTree +-- prepend-http@1.0.4
+584 silly currentTree +-- preserve@0.2.0
+584 silly currentTree +-- pretty-hrtime@1.0.3
+584 silly currentTree +-- process-nextick-args@1.0.7
+584 silly currentTree +-- proxy-addr@1.1.2
+584 silly currentTree +-- ps-tree@1.1.0
+584 silly currentTree +-- punycode@1.4.1
+584 silly currentTree +-- qs@6.2.0
+584 silly currentTree +-- randomatic@1.1.6
+584 silly currentTree +-- range-parser@1.2.0
+584 silly currentTree +-- rc@1.1.6
+584 silly currentTree +-- read-all-stream@3.1.0
+584 silly currentTree | +-- isarray@1.0.0
+584 silly currentTree | `-- readable-stream@2.2.2
+584 silly currentTree +-- read-pkg-up@1.0.1
+584 silly currentTree +-- read-pkg@1.1.0
+584 silly currentTree +-- readable-stream@1.1.14
+584 silly currentTree +-- readdirp@2.1.0
+584 silly currentTree | +-- isarray@1.0.0
+584 silly currentTree | +-- minimatch@3.0.3
+584 silly currentTree | `-- readable-stream@2.2.2
+584 silly currentTree +-- rechoir@0.6.2
+584 silly currentTree +-- redent@1.0.0
+584 silly currentTree +-- regex-cache@0.4.3
+584 silly currentTree +-- registry-url@3.1.0
+584 silly currentTree +-- repeat-element@1.1.2
+584 silly currentTree +-- repeat-string@1.6.1
+584 silly currentTree +-- repeating@2.0.1
+584 silly currentTree +-- replace-ext@0.0.1
+584 silly currentTree +-- request@2.78.0
+584 silly currentTree | `-- qs@6.3.0
+584 silly currentTree +-- require-directory@2.1.1
+584 silly currentTree +-- require-main-filename@1.0.1
+584 silly currentTree +-- requires-port@1.0.0
+584 silly currentTree +-- resolve-dir@0.1.1
+584 silly currentTree +-- resolve@1.1.7
+584 silly currentTree +-- resp-modifier@6.0.2
+584 silly currentTree | `-- minimatch@3.0.3
+584 silly currentTree +-- right-align@0.1.3
+584 silly currentTree +-- rx@4.1.0
+584 silly currentTree +-- sax@0.5.8
+584 silly currentTree +-- semver-diff@2.1.0
+584 silly currentTree | `-- semver@5.3.0
+584 silly currentTree +-- semver@4.3.6
+584 silly currentTree +-- send@0.14.1
+584 silly currentTree +-- sequencify@0.0.7
+584 silly currentTree +-- serve-index@1.8.0
+584 silly currentTree +-- serve-static@1.11.1
+584 silly currentTree +-- server-destroy@1.0.1
+584 silly currentTree +-- set-blocking@2.0.0
+584 silly currentTree +-- set-immediate-shim@1.0.1
+584 silly currentTree +-- setprototypeof@1.0.2
+584 silly currentTree +-- sigmund@1.0.1
+584 silly currentTree +-- signal-exit@3.0.2
+584 silly currentTree +-- slide@1.1.6
+584 silly currentTree +-- sntp@1.0.9
+584 silly currentTree +-- socket.io-adapter@0.5.0
+584 silly currentTree | +-- debug@2.3.3
+584 silly currentTree | `-- ms@0.7.2
+584 silly currentTree +-- socket.io-client@1.6.0
+584 silly currentTree | +-- component-emitter@1.2.1
+584 silly currentTree | +-- debug@2.3.3
+584 silly currentTree | `-- ms@0.7.2
+584 silly currentTree +-- socket.io-parser@2.3.1
+584 silly currentTree +-- socket.io@1.6.0
+584 silly currentTree | +-- debug@2.3.3
+584 silly currentTree | +-- ms@0.7.2
+584 silly currentTree | `-- object-assign@4.1.0
+584 silly currentTree +-- source-map@0.5.6
+584 silly currentTree +-- sparkles@1.0.0
+584 silly currentTree +-- spdx-correct@1.0.2
+584 silly currentTree +-- spdx-expression-parse@1.0.4
+584 silly currentTree +-- spdx-license-ids@1.2.2
+584 silly currentTree +-- split@0.3.3
+584 silly currentTree +-- sshpk@1.10.1
+584 silly currentTree | `-- assert-plus@1.0.0
+584 silly currentTree +-- statuses@1.3.1
+584 silly currentTree +-- stream-combiner@0.0.4
+584 silly currentTree +-- stream-consume@0.1.0
+584 silly currentTree +-- stream-shift@1.0.0
+584 silly currentTree +-- stream-throttle@0.1.3
+584 silly currentTree +-- string_decoder@0.10.31
+584 silly currentTree +-- string-length@1.0.1
+584 silly currentTree +-- string-width@1.0.2
+584 silly currentTree +-- stringstream@0.0.5
+584 silly currentTree +-- strip-ansi@3.0.1
+584 silly currentTree +-- strip-bom@2.0.0
+584 silly currentTree +-- strip-indent@1.0.1
+584 silly currentTree +-- strip-json-comments@1.0.4
+584 silly currentTree +-- stylus@0.54.5
+584 silly currentTree | +-- glob@7.0.6
+584 silly currentTree | +-- minimatch@3.0.3
+584 silly currentTree | `-- source-map@0.1.43
+584 silly currentTree +-- supports-color@2.0.0
+584 silly currentTree +-- tfunk@3.0.2
+584 silly currentTree +-- through@2.3.8
+584 silly currentTree +-- through2@2.0.3
+584 silly currentTree | +-- isarray@1.0.0
+584 silly currentTree | `-- readable-stream@2.2.2
+584 silly currentTree +-- tildify@1.2.0
+584 silly currentTree +-- time-stamp@1.0.1
+584 silly currentTree +-- timed-out@2.0.0
+584 silly currentTree +-- to-array@0.1.4
+584 silly currentTree +-- touch@1.0.0
+584 silly currentTree | `-- nopt@1.0.10
+584 silly currentTree +-- tough-cookie@2.3.2
+584 silly currentTree +-- trim-newlines@1.0.0
+584 silly currentTree +-- tunnel-agent@0.4.3
+584 silly currentTree +-- tweetnacl@0.14.4
+584 silly currentTree +-- type-is@1.6.14
+584 silly currentTree +-- ua-parser-js@0.7.12
+584 silly currentTree +-- uglify-js@2.7.5
+584 silly currentTree +-- uglify-save-license@0.4.1
+584 silly currentTree +-- uglify-to-browserify@1.0.2
+584 silly currentTree +-- ultron@1.0.2
+584 silly currentTree +-- unc-path-regex@0.1.2
+584 silly currentTree +-- undefsafe@0.0.3
+584 silly currentTree +-- underscore@1.7.0
+584 silly currentTree +-- unique-stream@1.0.0
+584 silly currentTree +-- unpipe@1.0.0
+584 silly currentTree +-- update-notifier@0.5.0
+584 silly currentTree | `-- repeating@1.1.3
+584 silly currentTree +-- user-home@1.1.1
+584 silly currentTree +-- util-deprecate@1.0.2
+584 silly currentTree +-- utils-merge@1.0.0
+584 silly currentTree +-- uuid@2.0.3
+584 silly currentTree +-- v8flags@2.0.11
+584 silly currentTree +-- validate-npm-package-license@3.0.1
+584 silly currentTree +-- vary@1.1.0
+584 silly currentTree +-- verror@1.3.6
+584 silly currentTree +-- vinyl-bufferstream@1.0.1
+584 silly currentTree +-- vinyl-fs@0.3.14
+584 silly currentTree | +-- clone@0.2.0
+584 silly currentTree | +-- graceful-fs@3.0.11
+584 silly currentTree | +-- readable-stream@1.0.34
+584 silly currentTree | +-- strip-bom@1.0.0
+584 silly currentTree | +-- through2@0.6.5
+584 silly currentTree | `-- vinyl@0.4.6
+584 silly currentTree +-- vinyl-sourcemaps-apply@0.2.1
+584 silly currentTree +-- vinyl@0.5.3
+584 silly currentTree +-- vlq@0.2.1
+584 silly currentTree +-- weinre@2.0.0-pre-I0Z7U9OV
+584 silly currentTree | +-- connect@1.9.2
+584 silly currentTree | +-- express@2.5.11
+584 silly currentTree | +-- mime@1.2.4
+584 silly currentTree | +-- mkdirp@0.3.0
+584 silly currentTree | `-- qs@0.4.2
+584 silly currentTree +-- when@3.7.7
+584 silly currentTree +-- which-module@1.0.0
+584 silly currentTree +-- which@1.2.12
+584 silly currentTree +-- window-size@0.1.0
+584 silly currentTree +-- wordwrap@0.0.2
+584 silly currentTree +-- wrap-ansi@2.1.0
+584 silly currentTree +-- wrappy@1.0.2
+584 silly currentTree +-- write-file-atomic@1.2.0
+584 silly currentTree +-- ws@1.1.1
+584 silly currentTree +-- wtf-8@1.0.0
+584 silly currentTree +-- xdg-basedir@2.0.0
+584 silly currentTree +-- xmlhttprequest-ssl@1.5.3
+584 silly currentTree +-- xtend@4.0.1
+584 silly currentTree +-- y18n@3.2.1
+584 silly currentTree +-- yargs-parser@4.2.0
+584 silly currentTree | `-- camelcase@3.0.0
+584 silly currentTree +-- yargs@3.10.0
+584 silly currentTree | `-- camelcase@1.2.1
+584 silly currentTree `-- yeast@0.1.2
+585 silly idealTree property@1.0.0
+585 silly idealTree +-- abbrev@1.0.9
+585 silly idealTree +-- accepts@1.3.3
+585 silly idealTree +-- accord@0.26.3
+585 silly idealTree | +-- glob@7.1.1
+585 silly idealTree | +-- minimatch@3.0.3
+585 silly idealTree | `-- semver@5.3.0
+585 silly idealTree +-- acorn-jsx@3.0.1
+585 silly idealTree +-- acorn-object-spread@1.0.0
+585 silly idealTree +-- acorn@3.3.0
+585 silly idealTree +-- after@0.8.1
+585 silly idealTree +-- align-text@0.1.4
+585 silly idealTree +-- amdefine@1.0.1
+585 silly idealTree +-- ansi-regex@2.0.0
+585 silly idealTree +-- ansi-styles@2.2.1
+585 silly idealTree +-- anymatch@1.3.0
+585 silly idealTree +-- archy@1.0.0
+585 silly idealTree +-- arr-diff@2.0.0
+585 silly idealTree +-- arr-flatten@1.0.1
+585 silly idealTree +-- array-differ@1.0.0
+585 silly idealTree +-- array-find-index@1.0.2
+585 silly idealTree +-- array-flatten@1.1.1
+585 silly idealTree +-- array-uniq@1.0.3
+585 silly idealTree +-- array-unique@0.2.1
+585 silly idealTree +-- arraybuffer.slice@0.0.6
+585 silly idealTree +-- arrify@1.0.1
+585 silly idealTree +-- asn1@0.2.3
+585 silly idealTree +-- assert-plus@0.2.0
+585 silly idealTree +-- async-each-series@0.1.1
+585 silly idealTree +-- async-each@1.0.1
+585 silly idealTree +-- async@0.2.10
+585 silly idealTree +-- asynckit@0.4.0
+585 silly idealTree +-- aws-sign2@0.6.0
+585 silly idealTree +-- aws4@1.5.0
+585 silly idealTree +-- backo2@1.0.2
+585 silly idealTree +-- balanced-match@0.4.2
+585 silly idealTree +-- base64-arraybuffer@0.1.5
+585 silly idealTree +-- base64id@0.1.0
+585 silly idealTree +-- batch@0.5.3
+585 silly idealTree +-- bcrypt-pbkdf@1.0.0
+585 silly idealTree +-- beeper@1.1.1
+585 silly idealTree +-- better-assert@1.0.2
+585 silly idealTree +-- binary-extensions@1.8.0
+585 silly idealTree +-- blob@0.0.4
+585 silly idealTree +-- boom@2.10.1
+585 silly idealTree +-- brace-expansion@1.1.6
+585 silly idealTree +-- braces@1.8.5
+585 silly idealTree +-- browser-sync-client@2.4.4
+585 silly idealTree +-- browser-sync-ui@0.6.2
+585 silly idealTree +-- browser-sync@2.18.5
+585 silly idealTree | +-- camelcase@3.0.0
+585 silly idealTree | +-- cliui@3.2.0
+585 silly idealTree | +-- qs@6.2.1
+585 silly idealTree | +-- window-size@0.2.0
+585 silly idealTree | `-- yargs@6.4.0
+585 silly idealTree +-- bs-recipes@1.3.2
+585 silly idealTree +-- buble@0.12.5
+585 silly idealTree +-- bubleify@0.5.1
+585 silly idealTree | `-- object-assign@4.1.0
+585 silly idealTree +-- buffer-shims@1.0.0
+585 silly idealTree +-- bufferstreams@1.0.1
+585 silly idealTree +-- builtin-modules@1.1.1
+585 silly idealTree +-- callsite@1.0.0
+585 silly idealTree +-- camelcase-keys@2.1.0
+585 silly idealTree +-- camelcase@2.1.1
+585 silly idealTree +-- caseless@0.11.0
+585 silly idealTree +-- center-align@0.1.3
+585 silly idealTree +-- chalk@1.1.3
+585 silly idealTree +-- chokidar@1.6.1
+585 silly idealTree +-- clean-css@3.4.22
+585 silly idealTree | +-- commander@2.8.1
+585 silly idealTree | `-- source-map@0.4.4
+585 silly idealTree +-- cliui@2.1.0
+585 silly idealTree +-- clone-stats@0.0.1
+585 silly idealTree +-- clone@1.0.2
+585 silly idealTree +-- code-point-at@1.1.0
+585 silly idealTree +-- colors@1.1.2
+585 silly idealTree +-- combined-stream@1.0.5
+585 silly idealTree +-- commander@2.9.0
+585 silly idealTree +-- component-bind@1.0.0
+585 silly idealTree +-- component-emitter@1.1.2
+585 silly idealTree +-- component-inherit@0.0.3
+585 silly idealTree +-- concat-map@0.0.1
+585 silly idealTree +-- configstore@1.4.0
+585 silly idealTree | `-- object-assign@4.1.0
+585 silly idealTree +-- connect-history-api-fallback@1.3.0
+585 silly idealTree +-- connect@3.5.0
+585 silly idealTree +-- content-disposition@0.5.1
+585 silly idealTree +-- content-type@1.0.2
+585 silly idealTree +-- convert-source-map@1.3.0
+585 silly idealTree +-- cookie-signature@1.0.6
+585 silly idealTree +-- cookie@0.3.1
+585 silly idealTree +-- core-util-is@1.0.2
+585 silly idealTree +-- cryptiles@2.0.5
+585 silly idealTree +-- css-parse@1.7.0
+585 silly idealTree +-- currently-unhandled@0.4.1
+585 silly idealTree +-- dashdash@1.14.1
+585 silly idealTree | `-- assert-plus@1.0.0
+585 silly idealTree +-- dateformat@1.0.12
+585 silly idealTree +-- debug@2.2.0
+585 silly idealTree +-- decamelize@1.2.0
+585 silly idealTree +-- deep-extend@0.4.1
+585 silly idealTree +-- defaults@1.0.3
+585 silly idealTree +-- delayed-stream@1.0.0
+585 silly idealTree +-- depd@1.1.0
+585 silly idealTree +-- deprecated@0.0.1
+585 silly idealTree +-- destroy@1.0.4
+585 silly idealTree +-- detect-file@0.1.0
+585 silly idealTree +-- dev-ip@1.0.1
+585 silly idealTree +-- duplexer@0.1.1
+585 silly idealTree +-- duplexer2@0.0.2
+585 silly idealTree +-- duplexify@3.5.0
+585 silly idealTree | +-- end-of-stream@1.0.0
+585 silly idealTree | +-- isarray@1.0.0
+585 silly idealTree | `-- readable-stream@2.2.2
+585 silly idealTree +-- easy-extender@2.3.2
+585 silly idealTree | `-- lodash@3.10.1
+585 silly idealTree +-- eazy-logger@3.0.2
+585 silly idealTree +-- ecc-jsbn@0.1.1
+585 silly idealTree +-- ee-first@1.1.1
+585 silly idealTree +-- emitter-steward@1.0.0
+585 silly idealTree +-- encodeurl@1.0.1
+585 silly idealTree +-- end-of-stream@0.1.5
+585 silly idealTree +-- engine.io-client@1.8.0
+585 silly idealTree | +-- component-emitter@1.2.1
+585 silly idealTree | +-- debug@2.3.3
+585 silly idealTree | `-- ms@0.7.2
+585 silly idealTree +-- engine.io-parser@1.3.1
+585 silly idealTree | `-- has-binary@0.1.6
+585 silly idealTree +-- engine.io@1.8.0
+585 silly idealTree | +-- debug@2.3.3
+585 silly idealTree | `-- ms@0.7.2
+585 silly idealTree +-- error-ex@1.3.0
+585 silly idealTree +-- es6-promise@3.3.1
+585 silly idealTree +-- escape-html@1.0.3
+585 silly idealTree +-- escape-string-regexp@1.0.5
+585 silly idealTree +-- etag@1.7.0
+585 silly idealTree +-- event-stream@3.3.4
+585 silly idealTree +-- eventemitter3@1.2.0
+585 silly idealTree +-- expand-brackets@0.1.5
+585 silly idealTree +-- expand-range@1.8.2
+585 silly idealTree +-- expand-tilde@1.2.2
+585 silly idealTree +-- express@4.14.0
+585 silly idealTree +-- extend@3.0.0
+585 silly idealTree +-- extglob@0.3.2
+585 silly idealTree +-- extsprintf@1.0.2
+585 silly idealTree +-- fancy-log@1.2.0
+585 silly idealTree +-- filename-regex@2.0.0
+585 silly idealTree +-- fill-range@2.2.3
+585 silly idealTree +-- finalhandler@0.5.0
+585 silly idealTree +-- find-index@0.1.1
+585 silly idealTree +-- find-up@1.1.2
+585 silly idealTree +-- findup-sync@0.4.3
+585 silly idealTree +-- fined@1.0.2
+585 silly idealTree +-- first-chunk-stream@1.0.0
+585 silly idealTree +-- flagged-respawn@0.3.2
+585 silly idealTree +-- for-in@0.1.6
+585 silly idealTree +-- for-own@0.1.4
+585 silly idealTree +-- forever-agent@0.6.1
+585 silly idealTree +-- form-data@2.1.2
+585 silly idealTree +-- formidable@1.0.17
+585 silly idealTree +-- forwarded@0.1.0
+585 silly idealTree +-- fresh@0.3.0
+585 silly idealTree +-- from@0.1.3
+585 silly idealTree +-- fs-exists-sync@0.1.0
+585 silly idealTree +-- fs-extra@1.0.0
+585 silly idealTree +-- fs.realpath@1.0.0
+585 silly idealTree +-- gaze@0.5.2
+585 silly idealTree +-- generate-function@2.0.0
+585 silly idealTree +-- generate-object-property@1.2.0
+585 silly idealTree +-- get-caller-file@1.0.2
+585 silly idealTree +-- get-stdin@4.0.1
+585 silly idealTree +-- getpass@0.1.6
+585 silly idealTree | `-- assert-plus@1.0.0
+585 silly idealTree +-- glob-base@0.3.0
+585 silly idealTree +-- glob-parent@2.0.0
+585 silly idealTree +-- glob-stream@3.1.18
+585 silly idealTree | +-- readable-stream@1.0.34
+585 silly idealTree | `-- through2@0.6.5
+585 silly idealTree +-- glob-watcher@0.0.6
+585 silly idealTree +-- glob@4.5.3
+585 silly idealTree +-- glob2base@0.0.12
+585 silly idealTree +-- global-modules@0.2.3
+585 silly idealTree +-- global-prefix@0.1.5
+585 silly idealTree +-- globule@0.1.0
+585 silly idealTree | +-- glob@3.1.21
+585 silly idealTree | +-- graceful-fs@1.2.3
+585 silly idealTree | +-- inherits@1.0.2
+585 silly idealTree | `-- minimatch@0.2.14
+585 silly idealTree +-- glogg@1.0.0
+585 silly idealTree +-- got@3.3.1
+585 silly idealTree +-- graceful-fs@4.1.11
+585 silly idealTree +-- graceful-readlink@1.0.1
+585 silly idealTree +-- gulp-minify-css@1.2.4
+585 silly idealTree | +-- isarray@1.0.0
+585 silly idealTree | +-- object-assign@4.1.0
+585 silly idealTree | `-- readable-stream@2.2.2
+585 silly idealTree +-- gulp-nodemon@2.2.1
+585 silly idealTree +-- gulp-stylus@2.6.0
+585 silly idealTree +-- gulp-uglify@2.0.0
+585 silly idealTree | +-- lodash@4.17.2
+585 silly idealTree | `-- uglify-js@2.7.0
+585 silly idealTree +-- gulp-util@3.0.7
+585 silly idealTree +-- gulp@3.9.1
+585 silly idealTree +-- gulplog@1.0.0
+585 silly idealTree +-- har-validator@2.0.6
+585 silly idealTree +-- has-ansi@2.0.0
+585 silly idealTree +-- has-binary@0.1.7
+585 silly idealTree +-- has-cors@1.1.0
+585 silly idealTree +-- has-gulplog@0.1.0
+585 silly idealTree +-- hawk@3.1.3
+585 silly idealTree +-- hoek@2.16.3
+585 silly idealTree +-- homedir-polyfill@1.0.1
+585 silly idealTree +-- hosted-git-info@2.1.5
+585 silly idealTree +-- http-errors@1.5.1
+585 silly idealTree +-- http-proxy@1.15.2
+585 silly idealTree +-- http-signature@1.1.1
+585 silly idealTree +-- ignore-by-default@1.0.1
+585 silly idealTree +-- immutable@3.8.1
+585 silly idealTree +-- imurmurhash@0.1.4
+585 silly idealTree +-- indent-string@2.1.0
+585 silly idealTree +-- indexof@0.0.1
+585 silly idealTree +-- indx@0.2.3
+585 silly idealTree +-- infinity-agent@2.0.3
+585 silly idealTree +-- inflight@1.0.6
+585 silly idealTree +-- inherits@2.0.3
+585 silly idealTree +-- ini@1.3.4
+585 silly idealTree +-- interpret@1.0.1
+585 silly idealTree +-- invert-kv@1.0.0
+585 silly idealTree +-- ipaddr.js@1.1.1
+585 silly idealTree +-- is-absolute@0.2.6
+585 silly idealTree +-- is-arrayish@0.2.1
+585 silly idealTree +-- is-binary-path@1.0.1
+585 silly idealTree +-- is-buffer@1.1.4
+585 silly idealTree +-- is-builtin-module@1.0.0
+585 silly idealTree +-- is-dotfile@1.0.2
+585 silly idealTree +-- is-equal-shallow@0.1.3
+585 silly idealTree +-- is-extendable@0.1.1
+585 silly idealTree +-- is-extglob@1.0.0
+585 silly idealTree +-- is-finite@1.0.2
+585 silly idealTree +-- is-fullwidth-code-point@1.0.0
+585 silly idealTree +-- is-glob@2.0.1
+585 silly idealTree +-- is-my-json-valid@2.15.0
+585 silly idealTree +-- is-npm@1.0.0
+585 silly idealTree +-- is-number-like@1.0.6
+585 silly idealTree +-- is-number@2.1.0
+585 silly idealTree +-- is-posix-bracket@0.1.1
+585 silly idealTree +-- is-primitive@2.0.0
+585 silly idealTree +-- is-property@1.0.2
+585 silly idealTree +-- is-redirect@1.0.0
+585 silly idealTree +-- is-relative@0.2.1
+585 silly idealTree +-- is-stream@1.1.0
+585 silly idealTree +-- is-typedarray@1.0.0
+585 silly idealTree +-- is-unc-path@0.1.2
+585 silly idealTree +-- is-utf8@0.2.1
+585 silly idealTree +-- is-windows@0.2.0
+585 silly idealTree +-- isarray@0.0.1
+585 silly idealTree +-- isexe@1.1.2
+585 silly idealTree +-- isobject@2.1.0
+585 silly idealTree | `-- isarray@1.0.0
+585 silly idealTree +-- isstream@0.1.2
+585 silly idealTree +-- jodid25519@1.0.2
+585 silly idealTree +-- jsbn@0.1.0
+585 silly idealTree +-- json-schema@0.2.3
+585 silly idealTree +-- json-stringify-safe@5.0.1
+585 silly idealTree +-- json3@3.3.2
+585 silly idealTree +-- jsonfile@2.4.0
+585 silly idealTree +-- jsonpointer@4.0.0
+585 silly idealTree +-- jsprim@1.3.1
+585 silly idealTree +-- kind-of@3.1.0
+585 silly idealTree +-- klaw@1.3.1
+585 silly idealTree +-- latest-version@1.0.1
+585 silly idealTree +-- lazy-cache@1.0.4
+585 silly idealTree +-- lcid@1.0.0
+585 silly idealTree +-- liftoff@2.3.0
+585 silly idealTree +-- limiter@1.1.0
+585 silly idealTree +-- load-json-file@1.1.0
+585 silly idealTree +-- localtunnel@1.8.2
+585 silly idealTree | +-- camelcase@1.2.1
+585 silly idealTree | +-- cliui@3.2.0
+585 silly idealTree | +-- window-size@0.1.4
+585 silly idealTree | `-- yargs@3.29.0
+585 silly idealTree +-- lodash._baseassign@3.2.0
+585 silly idealTree +-- lodash._basecopy@3.0.1
+585 silly idealTree +-- lodash._basetostring@3.0.1
+585 silly idealTree +-- lodash._basevalues@3.0.0
+585 silly idealTree +-- lodash._bindcallback@3.0.1
+585 silly idealTree +-- lodash._createassigner@3.1.1
+585 silly idealTree +-- lodash._getnative@3.9.1
+585 silly idealTree +-- lodash._isiterateecall@3.0.9
+585 silly idealTree +-- lodash._reescape@3.0.0
+585 silly idealTree +-- lodash._reevaluate@3.0.0
+585 silly idealTree +-- lodash._reinterpolate@3.0.0
+585 silly idealTree +-- lodash._root@3.0.1
+585 silly idealTree +-- lodash.assign@3.2.0
+585 silly idealTree +-- lodash.assignwith@4.2.0
+585 silly idealTree +-- lodash.clone@4.5.0
+585 silly idealTree +-- lodash.defaults@4.2.0
+585 silly idealTree +-- lodash.escape@3.2.0
+585 silly idealTree +-- lodash.flatten@4.4.0
+585 silly idealTree +-- lodash.isarguments@3.1.0
+585 silly idealTree +-- lodash.isarray@3.0.4
+585 silly idealTree +-- lodash.isempty@4.4.0
+585 silly idealTree +-- lodash.isfinite@3.3.2
+585 silly idealTree +-- lodash.isplainobject@4.0.6
+585 silly idealTree +-- lodash.isstring@4.0.1
+585 silly idealTree +-- lodash.keys@3.1.2
+585 silly idealTree +-- lodash.mapvalues@4.6.0
+585 silly idealTree +-- lodash.merge@4.6.0
+585 silly idealTree +-- lodash.partialright@4.2.1
+585 silly idealTree +-- lodash.pick@4.4.0
+585 silly idealTree +-- lodash.restparam@3.6.1
+585 silly idealTree +-- lodash.template@3.6.2
+585 silly idealTree +-- lodash.templatesettings@3.1.1
+585 silly idealTree +-- lodash.uniq@4.5.0
+585 silly idealTree +-- lodash@1.0.2
+585 silly idealTree +-- longest@1.0.1
+585 silly idealTree +-- loud-rejection@1.6.0
+585 silly idealTree +-- lowercase-keys@1.0.0
+585 silly idealTree +-- lru-cache@2.7.3
+585 silly idealTree +-- magic-string@0.14.0
+585 silly idealTree +-- make-error-cause@1.2.2
+585 silly idealTree +-- make-error@1.2.1
+585 silly idealTree +-- map-cache@0.2.2
+585 silly idealTree +-- map-obj@1.0.1
+585 silly idealTree +-- map-stream@0.1.0
+585 silly idealTree +-- media-typer@0.3.0
+585 silly idealTree +-- meow@3.7.0
+585 silly idealTree | `-- object-assign@4.1.0
+585 silly idealTree +-- merge-descriptors@1.0.1
+585 silly idealTree +-- methods@1.1.2
+585 silly idealTree +-- micromatch@2.3.11
+585 silly idealTree +-- mime-db@1.25.0
+585 silly idealTree +-- mime-types@2.1.13
+585 silly idealTree +-- mime@1.3.4
+585 silly idealTree +-- minimatch@2.0.10
+585 silly idealTree +-- minimist@1.2.0
+585 silly idealTree +-- mkdirp@0.5.1
+585 silly idealTree | `-- minimist@0.0.8
+585 silly idealTree +-- ms@0.7.1
+585 silly idealTree +-- multipipe@0.1.2
+585 silly idealTree +-- natives@1.1.0
+585 silly idealTree +-- negotiator@0.6.1
+585 silly idealTree +-- nested-error-stacks@1.0.2
+585 silly idealTree +-- node-uuid@1.4.7
+585 silly idealTree +-- nodemon@1.11.0
+585 silly idealTree | +-- lodash.defaults@3.1.2
+585 silly idealTree | `-- minimatch@3.0.3
+585 silly idealTree +-- nopt@3.0.6
+585 silly idealTree +-- normalize-package-data@2.3.5
+585 silly idealTree +-- normalize-path@2.0.1
+585 silly idealTree +-- number-is-nan@1.0.1
+585 silly idealTree +-- oauth-sign@0.8.2
+585 silly idealTree +-- object-assign@3.0.0
+585 silly idealTree +-- object-component@0.0.3
+585 silly idealTree +-- object-path@0.9.2
+585 silly idealTree +-- object.omit@2.0.1
+585 silly idealTree +-- on-finished@2.3.0
+585 silly idealTree +-- once@1.3.3
+585 silly idealTree +-- openurl@1.1.0
+585 silly idealTree +-- opn@4.0.2
+585 silly idealTree | `-- object-assign@4.1.0
+585 silly idealTree +-- options@0.0.6
+585 silly idealTree +-- orchestrator@0.3.8
+585 silly idealTree +-- ordered-read-streams@0.1.0
+585 silly idealTree +-- os-homedir@1.0.2
+585 silly idealTree +-- os-locale@1.4.0
+585 silly idealTree +-- os-tmpdir@1.0.2
+585 silly idealTree +-- osenv@0.1.3
+585 silly idealTree +-- package-json@1.2.0
+585 silly idealTree +-- parse-filepath@1.0.1
+585 silly idealTree +-- parse-glob@3.0.4
+585 silly idealTree +-- parse-json@2.2.0
+585 silly idealTree +-- parse-passwd@1.0.0
+585 silly idealTree +-- parsejson@0.0.3
+585 silly idealTree +-- parseqs@0.0.5
+585 silly idealTree +-- parseuri@0.0.5
+585 silly idealTree +-- parseurl@1.3.1
+585 silly idealTree +-- path-exists@2.1.0
+585 silly idealTree +-- path-is-absolute@1.0.1
+585 silly idealTree +-- path-root-regex@0.1.2
+585 silly idealTree +-- path-root@0.1.1
+585 silly idealTree +-- path-to-regexp@0.1.7
+585 silly idealTree +-- path-type@1.1.0
+585 silly idealTree +-- pause-stream@0.0.11
+585 silly idealTree +-- pify@2.3.0
+585 silly idealTree +-- pinkie-promise@2.0.1
+585 silly idealTree +-- pinkie@2.0.4
+585 silly idealTree +-- portscanner@2.1.1
+585 silly idealTree | `-- async@1.5.2
+585 silly idealTree +-- prepend-http@1.0.4
+585 silly idealTree +-- preserve@0.2.0
+585 silly idealTree +-- pretty-hrtime@1.0.3
+585 silly idealTree +-- process-nextick-args@1.0.7
+585 silly idealTree +-- proxy-addr@1.1.2
+585 silly idealTree +-- ps-tree@1.1.0
+585 silly idealTree +-- punycode@1.4.1
+585 silly idealTree +-- qs@6.2.0
+585 silly idealTree +-- randomatic@1.1.6
+585 silly idealTree +-- range-parser@1.2.0
+585 silly idealTree +-- rc@1.1.6
+585 silly idealTree +-- read-all-stream@3.1.0
+585 silly idealTree | +-- isarray@1.0.0
+585 silly idealTree | `-- readable-stream@2.2.2
+585 silly idealTree +-- read-pkg-up@1.0.1
+585 silly idealTree +-- read-pkg@1.1.0
+585 silly idealTree +-- readable-stream@1.1.14
+585 silly idealTree +-- readdirp@2.1.0
+585 silly idealTree | +-- isarray@1.0.0
+585 silly idealTree | +-- minimatch@3.0.3
+585 silly idealTree | `-- readable-stream@2.2.2
+585 silly idealTree +-- rechoir@0.6.2
+585 silly idealTree +-- redent@1.0.0
+585 silly idealTree +-- regex-cache@0.4.3
+585 silly idealTree +-- registry-url@3.1.0
+585 silly idealTree +-- repeat-element@1.1.2
+585 silly idealTree +-- repeat-string@1.6.1
+585 silly idealTree +-- repeating@2.0.1
+585 silly idealTree +-- replace-ext@0.0.1
+585 silly idealTree +-- request@2.78.0
+585 silly idealTree | `-- qs@6.3.0
+585 silly idealTree +-- require-directory@2.1.1
+585 silly idealTree +-- require-main-filename@1.0.1
+585 silly idealTree +-- requires-port@1.0.0
+585 silly idealTree +-- resolve-dir@0.1.1
+585 silly idealTree +-- resolve@1.1.7
+585 silly idealTree +-- resp-modifier@6.0.2
+585 silly idealTree | `-- minimatch@3.0.3
+585 silly idealTree +-- right-align@0.1.3
+585 silly idealTree +-- rx@4.1.0
+585 silly idealTree +-- sax@0.5.8
+585 silly idealTree +-- semver-diff@2.1.0
+585 silly idealTree | `-- semver@5.3.0
+585 silly idealTree +-- semver@4.3.6
+585 silly idealTree +-- send@0.14.1
+585 silly idealTree +-- sequencify@0.0.7
+585 silly idealTree +-- serve-index@1.8.0
+585 silly idealTree +-- serve-static@1.11.1
+585 silly idealTree +-- server-destroy@1.0.1
+585 silly idealTree +-- set-blocking@2.0.0
+585 silly idealTree +-- set-immediate-shim@1.0.1
+585 silly idealTree +-- setprototypeof@1.0.2
+585 silly idealTree +-- sigmund@1.0.1
+585 silly idealTree +-- signal-exit@3.0.2
+585 silly idealTree +-- slide@1.1.6
+585 silly idealTree +-- sntp@1.0.9
+585 silly idealTree +-- socket.io-adapter@0.5.0
+585 silly idealTree | +-- debug@2.3.3
+585 silly idealTree | `-- ms@0.7.2
+585 silly idealTree +-- socket.io-client@1.6.0
+585 silly idealTree | +-- component-emitter@1.2.1
+585 silly idealTree | +-- debug@2.3.3
+585 silly idealTree | `-- ms@0.7.2
+585 silly idealTree +-- socket.io-parser@2.3.1
+585 silly idealTree +-- socket.io@1.6.0
+585 silly idealTree | +-- debug@2.3.3
+585 silly idealTree | +-- ms@0.7.2
+585 silly idealTree | `-- object-assign@4.1.0
+585 silly idealTree +-- source-map@0.5.6
+585 silly idealTree +-- sparkles@1.0.0
+585 silly idealTree +-- spdx-correct@1.0.2
+585 silly idealTree +-- spdx-expression-parse@1.0.4
+585 silly idealTree +-- spdx-license-ids@1.2.2
+585 silly idealTree +-- split@0.3.3
+585 silly idealTree +-- sshpk@1.10.1
+585 silly idealTree | `-- assert-plus@1.0.0
+585 silly idealTree +-- statuses@1.3.1
+585 silly idealTree +-- stream-combiner@0.0.4
+585 silly idealTree +-- stream-consume@0.1.0
+585 silly idealTree +-- stream-shift@1.0.0
+585 silly idealTree +-- stream-throttle@0.1.3
+585 silly idealTree +-- string_decoder@0.10.31
+585 silly idealTree +-- string-length@1.0.1
+585 silly idealTree +-- string-width@1.0.2
+585 silly idealTree +-- stringstream@0.0.5
+585 silly idealTree +-- strip-ansi@3.0.1
+585 silly idealTree +-- strip-bom@2.0.0
+585 silly idealTree +-- strip-indent@1.0.1
+585 silly idealTree +-- strip-json-comments@1.0.4
+585 silly idealTree +-- stylus@0.54.5
+585 silly idealTree | +-- glob@7.0.6
+585 silly idealTree | +-- minimatch@3.0.3
+585 silly idealTree | `-- source-map@0.1.43
+585 silly idealTree +-- supports-color@2.0.0
+585 silly idealTree +-- tfunk@3.0.2
+585 silly idealTree +-- through@2.3.8
+585 silly idealTree +-- through2@2.0.3
+585 silly idealTree | +-- isarray@1.0.0
+585 silly idealTree | `-- readable-stream@2.2.2
+585 silly idealTree +-- tildify@1.2.0
+585 silly idealTree +-- time-stamp@1.0.1
+585 silly idealTree +-- timed-out@2.0.0
+585 silly idealTree +-- to-array@0.1.4
+585 silly idealTree +-- touch@1.0.0
+585 silly idealTree | `-- nopt@1.0.10
+585 silly idealTree +-- tough-cookie@2.3.2
+585 silly idealTree +-- trim-newlines@1.0.0
+585 silly idealTree +-- tunnel-agent@0.4.3
+585 silly idealTree +-- tweetnacl@0.14.4
+585 silly idealTree +-- type-is@1.6.14
+585 silly idealTree +-- ua-parser-js@0.7.12
+585 silly idealTree +-- uglify-js@2.7.5
+585 silly idealTree +-- uglify-save-license@0.4.1
+585 silly idealTree +-- uglify-to-browserify@1.0.2
+585 silly idealTree +-- ultron@1.0.2
+585 silly idealTree +-- unc-path-regex@0.1.2
+585 silly idealTree +-- undefsafe@0.0.3
+585 silly idealTree +-- underscore@1.7.0
+585 silly idealTree +-- unique-stream@1.0.0
+585 silly idealTree +-- unpipe@1.0.0
+585 silly idealTree +-- update-notifier@0.5.0
+585 silly idealTree | `-- repeating@1.1.3
+585 silly idealTree +-- user-home@1.1.1
+585 silly idealTree +-- util-deprecate@1.0.2
+585 silly idealTree +-- utils-merge@1.0.0
+585 silly idealTree +-- uuid@2.0.3
+585 silly idealTree +-- v8flags@2.0.11
+585 silly idealTree +-- validate-npm-package-license@3.0.1
+585 silly idealTree +-- vary@1.1.0
+585 silly idealTree +-- verror@1.3.6
+585 silly idealTree +-- vinyl-bufferstream@1.0.1
+585 silly idealTree +-- vinyl-fs@0.3.14
+585 silly idealTree | +-- clone@0.2.0
+585 silly idealTree | +-- graceful-fs@3.0.11
+585 silly idealTree | +-- readable-stream@1.0.34
+585 silly idealTree | +-- strip-bom@1.0.0
+585 silly idealTree | +-- through2@0.6.5
+585 silly idealTree | `-- vinyl@0.4.6
+585 silly idealTree +-- vinyl-sourcemaps-apply@0.2.1
+585 silly idealTree +-- vinyl@0.5.3
+585 silly idealTree +-- vlq@0.2.1
+585 silly idealTree +-- weinre@2.0.0-pre-I0Z7U9OV
+585 silly idealTree | +-- connect@1.9.2
+585 silly idealTree | +-- express@2.5.11
+585 silly idealTree | +-- mime@1.2.4
+585 silly idealTree | +-- mkdirp@0.3.0
+585 silly idealTree | `-- qs@0.4.2
+585 silly idealTree +-- when@3.7.7
+585 silly idealTree +-- which-module@1.0.0
+585 silly idealTree +-- which@1.2.12
+585 silly idealTree +-- window-size@0.1.0
+585 silly idealTree +-- wordwrap@0.0.2
+585 silly idealTree +-- wrap-ansi@2.1.0
+585 silly idealTree +-- wrappy@1.0.2
+585 silly idealTree +-- write-file-atomic@1.2.0
+585 silly idealTree +-- ws@1.1.1
+585 silly idealTree +-- wtf-8@1.0.0
+585 silly idealTree +-- xdg-basedir@2.0.0
+585 silly idealTree +-- xmlhttprequest-ssl@1.5.3
+585 silly idealTree +-- xtend@4.0.1
+585 silly idealTree +-- y18n@3.2.1
+585 silly idealTree +-- yargs-parser@4.2.0
+585 silly idealTree | `-- camelcase@3.0.0
+585 silly idealTree +-- yargs@3.10.0
+585 silly idealTree | `-- camelcase@1.2.1
+585 silly idealTree `-- yeast@0.1.2
+586 silly generateActionsToTake Starting
+587 silly install generateActionsToTake
+588 silly generateActionsToTake Finishing
+589 silly diffTrees action count 1
+590 silly diffTrees update express@4.14.0
+591 silly decomposeActions action count 8
+592 silly decomposeActions fetch express@4.14.0
+593 silly decomposeActions extract express@4.14.0
+594 silly decomposeActions test express@4.14.0
+595 silly decomposeActions preinstall express@4.14.0
+596 silly decomposeActions build express@4.14.0
+597 silly decomposeActions install express@4.14.0
+598 silly decomposeActions postinstall express@4.14.0
+599 silly decomposeActions finalize express@4.14.0
+600 silly runTopLevelLifecycles Starting
+601 silly executeActions Starting
+602 silly install executeActions
+603 silly doSerial global-install 0
+604 silly doParallel fetch 1
+605 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+606 verbose lock using C:\Users\Administrator\AppData\Roaming\npm-cache\_locks\staging-abc9dcb253004154.lock for E:\gitspace\property\node_modules\.staging
+607 silly doParallel extract 1
+608 silly extract express@4.14.0
+609 verbose unbuild node_modules\.staging\express-67337e34
+610 silly gentlyRm E:\gitspace\property\node_modules\.staging\express-67337e34 is being purged from base E:\gitspace\property
+611 verbose gentlyRm don't care about contents; nuking E:\gitspace\property\node_modules\.staging\express-67337e34
+612 verbose tar unpack C:\Users\Administrator\AppData\Roaming\npm-cache\express\4.14.0\package.tgz
+613 verbose tar unpacking to E:\gitspace\property\node_modules\.staging\express-67337e34
+614 silly gentlyRm E:\gitspace\property\node_modules\.staging\express-67337e34 is being purged
+615 verbose gentlyRm don't care about contents; nuking E:\gitspace\property\node_modules\.staging\express-67337e34
+616 silly gunzTarPerm modes [ '777', '666' ]
+617 silly gunzTarPerm extractEntry package.json
+618 silly gunzTarPerm extractEntry LICENSE
+619 silly gunzTarPerm extractEntry index.js
+620 silly gunzTarPerm extractEntry History.md
+621 silly gunzTarPerm extractEntry Readme.md
+622 silly gunzTarPerm extractEntry lib/application.js
+623 silly gunzTarPerm extractEntry lib/express.js
+624 silly gunzTarPerm extractEntry lib/request.js
+625 silly gunzTarPerm extractEntry lib/response.js
+626 silly gunzTarPerm extractEntry lib/utils.js
+627 silly gunzTarPerm extractEntry lib/view.js
+628 silly gunzTarPerm extractEntry lib/middleware/init.js
+629 silly gunzTarPerm extractEntry lib/middleware/query.js
+630 silly gunzTarPerm extractEntry lib/router/index.js
+631 silly gunzTarPerm extractEntry lib/router/layer.js
+632 silly gunzTarPerm extractEntry lib/router/route.js
+633 silly gentlyRm E:\gitspace\property\node_modules\.staging\express-67337e34\node_modules is being purged
+634 verbose gentlyRm don't care about contents; nuking E:\gitspace\property\node_modules\.staging\express-67337e34\node_modules
+635 silly doParallel preinstall 1
+636 silly preinstall express@4.14.0 E:\gitspace\property\node_modules\.staging\express-67337e34
+637 info lifecycle express@4.14.0~preinstall: express@4.14.0
+638 silly lifecycle express@4.14.0~preinstall: no script for preinstall, continuing
+639 silly doReverseSerial remove 0
+640 silly doSerial move 0
+641 silly doSerial finalize 1
+642 silly finalize E:\gitspace\property\node_modules\express
+643 verbose unlock done using C:\Users\Administrator\AppData\Roaming\npm-cache\_locks\staging-abc9dcb253004154.lock for E:\gitspace\property\node_modules\.staging
+644 silly rollbackFailedOptional Starting
+645 silly rollbackFailedOptional Finishing
+646 silly runTopLevelLifecycles Finishing
+647 silly install printInstalled
+648 warn optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules\chokidar\node_modules\fsevents):
+649 warn notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.0.15: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"ia32"})
+650 verbose notsup SKIPPING OPTIONAL DEPENDENCY: Valid OS:    darwin
+650 verbose notsup SKIPPING OPTIONAL DEPENDENCY: Valid Arch:  any
+650 verbose notsup SKIPPING OPTIONAL DEPENDENCY: Actual OS:   win32
+650 verbose notsup SKIPPING OPTIONAL DEPENDENCY: Actual Arch: ia32
+651 warn property@1.0.0 No description
+652 verbose If you need help, you may report this error at:
+652 verbose     <https://github.com/npm/npm/issues>
+653 verbose stack Error: EPERM: operation not permitted, rename 'E:\gitspace\property\node_modules\express' -> 'E:\gitspace\property\node_modules\.express.DELETE'
+653 verbose stack     at moveAway (C:\Users\Administrator\AppData\Roaming\nvm\v6.9.1\node_modules\npm\lib\install\action\finalize.js:38:5)
+653 verbose stack     at destStatted (C:\Users\Administrator\AppData\Roaming\nvm\v6.9.1\node_modules\npm\lib\install\action\finalize.js:27:7)
+653 verbose stack     at FSReqWrap.oncomplete (fs.js:123:15)
+653 verbose stack
+653 verbose stack Error: EPERM: operation not permitted, rename 'E:\gitspace\property\node_modules\express' -> 'E:\gitspace\property\node_modules\.express.DELETE'
+653 verbose stack     at Error (native)
+654 verbose cwd E:\gitspace\property
+655 error Windows_NT 6.1.7601
+656 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "express" "--save"
+657 error node v6.9.1
+658 error npm  v3.10.8
+659 error path E:\gitspace\property\node_modules\express
+660 error code EPERM
+661 error errno -4048
+662 error syscall rename
+663 error Error: EPERM: operation not permitted, rename 'E:\gitspace\property\node_modules\express' -> 'E:\gitspace\property\node_modules\.express.DELETE'
+663 error     at moveAway (C:\Users\Administrator\AppData\Roaming\nvm\v6.9.1\node_modules\npm\lib\install\action\finalize.js:38:5)
+663 error     at destStatted (C:\Users\Administrator\AppData\Roaming\nvm\v6.9.1\node_modules\npm\lib\install\action\finalize.js:27:7)
+663 error     at FSReqWrap.oncomplete (fs.js:123:15)
+663 error
+663 error Error: EPERM: operation not permitted, rename 'E:\gitspace\property\node_modules\express' -> 'E:\gitspace\property\node_modules\.express.DELETE'
+663 error     at Error (native)
+663 error  { Error: EPERM: operation not permitted, rename 'E:\gitspace\property\node_modules\express' -> 'E:\gitspace\property\node_modules\.express.DELETE'
+663 error     at moveAway (C:\Users\Administrator\AppData\Roaming\nvm\v6.9.1\node_modules\npm\lib\install\action\finalize.js:38:5)
+663 error     at destStatted (C:\Users\Administrator\AppData\Roaming\nvm\v6.9.1\node_modules\npm\lib\install\action\finalize.js:27:7)
+663 error     at FSReqWrap.oncomplete (fs.js:123:15)
+663 error
+663 error Error: EPERM: operation not permitted, rename 'E:\gitspace\property\node_modules\express' -> 'E:\gitspace\property\node_modules\.express.DELETE'
+663 error     at Error (native) parent: 'property' }
+664 error Please try running this command again as root/Administrator.
+665 verbose exit [ -4048, true ]
