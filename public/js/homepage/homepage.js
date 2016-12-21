@@ -45,52 +45,29 @@ var settime = setInterval(sum,2000);
 }
 
 
+
 var a=0;
-/*$('.navbar_01').on('touchstart',function(){
-//	var c=$(this).index();
-	a++;
-	if(a==1){
-		
-		console.log(a)
-		$('.navbar_area').css('display','block')
-		
-	}else if(a==2){
-		a=0;
-		$('.navbar_area').css('display','none')
-		
-		
-	}
-})*/
-
-
-
-	
-
 $(".navbar_02").on('touchstart',function(){
 	
 	a++;
 	if(a==1){
 		
 		console.log(a)
-		$(".navbar_02").html("<img src='../../public/img/homepage/content_icon01_down@2x.png'/>")
+		$(".navbar_02").html("<img src='public/img/homepage/content_icon01_down@2x.png'/>")
 		
 	}else if(a==2){
 		a=0;
 		$(".navbar_02").html('')
-		$(".navbar_02").html("<img src='../../public/img/homepage/content_icon01_nor@2x.png'/>")
+		$(".navbar_02").html("<img src='public/img/homepage/content_icon01_nor@2x.png'/>")
 		
 		
 	}
+	})
 	
-//	$(".navbar_01").find(".navbar_p").css("color","#646464")
-//	$(".navbar_01").find(".navbar_img").html("<img src='../../public/img/homepage/content_icon02_nor@2x.png'/>")
-//	$(".navbar_02").html("<img src='../../public/img/homepage/content_icon01_nor@2x.png'/>")
-//	
-//	$(this).html("");
-//	$(this).html("<img src='../../public/img/homepage/content_icon01_down@2x.png'/>")
-})
+
+	
 $(".navbar_01").on('touchstart',function(){
-	
+	var count = $(this).index();
 	
 		a++;
 	if(a==1){
@@ -98,42 +75,21 @@ $(".navbar_01").on('touchstart',function(){
 		console.log(a)
 		$('.navbar_area').css('display','block')
 		$(this).find(".navbar_p").css("color","#ea5404");
-		$(this).find(".navbar_img").html("<img src='../../public/img/homepage/content_icon02_press@2x.png'/>")
+		$(this).find(".navbar_img").html("<img src='public/img/homepage/content_icon02_press@2x.png'/>")
 		
 	}else if(a==2){
 		a=0;
 		$('.navbar_area').css('display','none')
 		$(".navbar_01").find(".navbar_p").css("color","#646464")
-		$(".navbar_01").find(".navbar_img").html("<img src='../../public/img/homepage/content_icon02_nor@2x.png'/>")
+		$(".navbar_01").find(".navbar_img").html("<img src='public/img/homepage/content_icon02_nor@2x.png'/>")
 		
 	}
 	
 	
 	
-	
-	
-//	$(".navbar_01").find(".navbar_p").css("color","#646464")
-//	$(".navbar_01").find(".navbar_img").html("<img src='../../public/img/homepage/content_icon02_nor@2x.png'/>")
-//	$(".navbar_02").html("<img src='../../public/img/homepage/content_icon01_nor@2x.png'/>")
-//	
-//	$(this).find(".navbar_p").css("color","#ea5404");
-//	$(this).find(".navbar_img").html("<img src='../../public/img/homepage/content_icon02_press@2x.png'/>")
-	/*$(this).find(".navbar_img").animate({
-		rotate:'180deg'
-	})*/
-	//定位浮动
-	$(".head").css("display","none")
-	$(".top").css("display","block").css("z-index","1");
-				
-	$(".navbar").css("position","fixed");
-	$(".navbar").css("margin-top","-215px");
- 	$(window).scrollTop(187);
- 	
- 	
- 	
 	//区域
-	var count = $(this).index();
-	//console.log(count);
+	
+	console.log("count"+count);
 	switch(count){
 		case 0:
 	//	console.log(count);
@@ -187,17 +143,20 @@ $(".navbar_01").on('touchstart',function(){
 		$('.area_left').find("ul").eq(0).css("display","none")
 		$('.area_right').find("ul").eq(0).css("display","none")
 		$('.area_left').find("ul").eq(1).css("display","block")
-		$('.area_right').find("ul").eq(1).css("display","block").css('background','#E1E1E1');
-		
-		
-		
+		$('.area_right').find("ul").eq(1).css("display","block").css('background','#E1E1E1');		
 	}
-	$('.top_head_span').on("touchstart",function(){
-		location.replace("https://www.baidu.com/");
-	})
-})
-	
+	                                                        	
 
+	//定位浮动
+	$(".head").css("display","none")
+	$(".top").css("display","block").css("z-index","1");
+				
+	$(".navbar").css("position","fixed");
+	$(".navbar").css("margin-top","-215px");
+ 	$(window).scrollTop(187)
+})
+                           	
+                
 
 $('.mold').on('touchstart',function(){
 	var a = $(this).index();
@@ -244,18 +203,68 @@ $(window).on('scroll',function(){
  })
 })
  
+
+
+//首页信息栏
 $('.footer_poto').on("touchstart",function(){
-//	var poto = $(this).index();
-//	console.log(poto)
-	if($("#a1").hasClass("footer_poto_img")){
-		$("#a1").removeClass("footer_poto_img")
-		$("#a1").addClass("footer_poto_img01")
-		
-//		$(this).find('div').removeClass('.footer_poto_img');
-		
-//		$('.footer_poto').eq(0).find('div').eq(0).addClass('.footer_poto_img01');
-		
-		
+	var poto = $(this).index();
+	//console.log(poto)
+	if(poto!==0){
+		$("#a1").addClass("footer_poto_img01");
+		$('.footer_poto_p').addClass("footer_poto_p01");
+	}else{
+		$("#a1").removeClass("footer_poto_img01");
+		$('.footer_poto_p').removeClass("footer_poto_p01");
+	}
+	
+	if(poto==1){
+		$('#a2').addClass("footer_poto_img04");
+		$('.footer_poto_p02').addClass("footer_poto_p02b");
+	}else{
+		$('#a2').removeClass("footer_poto_img04");
+		$('.footer_poto_p02').removeClass("footer_poto_p02b");
+	}
+	if(poto==2){
+		$('.footer_poto_img02').addClass("footer_poto_img02b")
+	}else{
+		$('.footer_poto_img02').removeClass("footer_poto_img02b")
+	}
+	if(poto==3){
+		$('#a3').addClass("footer_poto_img05a");
+		$('.footer_poto_p03').addClass("footer_poto_p03b");
+		$('.message').css('display','block')
+	}else{
+		$('#a3').removeClass("footer_poto_img05a");
+		$('.footer_poto_p03').removeClass("footer_poto_p03b");
+		$('.message').css('display','none')
+	}
+	if(poto==4){
+		$('#a4').addClass("footer_poto_img06a");
+		$('.footer_poto_p04').addClass("footer_poto_p04b");
+	}else{
+		$('#a4').removeClass("footer_poto_img06a");
+		$('.footer_poto_p04').removeClass("footer_poto_p04b");
 	}
 })
+
+
+
+//信息里的导航
+
+$('.message_top_span').on('tap',function(){
+	var aa = $(this).index();
+	if(aa==0){
+		$('.message_top_span').removeClass('active');
+		$(this).addClass('active')
+	}else if(aa==1){
+		$('.message_top_span').removeClass('active');
+		$(this).addClass('active')
+	}else if(aa==2)
+		$('.message_top_span').removeClass('active');
+		$(this).addClass('active')
+	})
+
+
+
+
 
